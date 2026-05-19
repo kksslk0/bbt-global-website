@@ -4,6 +4,7 @@ import HeroBanner from '../../components/home/HeroBanner.astro';
 import ProductShowcase from '../../components/home/ProductShowcase.tsx';
 import WhitepaperCTA from '../../components/home/WhitepaperCTA.astro';
 import StatsBanner from '../../components/home/StatsBanner.astro';
+import ScrollReveal from '../../components/shared/ScrollReveal.tsx';
 import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 import { langs, type Lang } from '../../i18n/dict';
 
@@ -17,7 +18,13 @@ const t = useTranslations(lang);
 
 <BaseLayout lang={lang} title="BBT Global" description={t('home.subtitle')}>
   <HeroBanner lang={lang} />
-  <ProductShowcase lang={lang} client:load />
-  <WhitepaperCTA lang={lang} />
-  <StatsBanner lang={lang} />
+  <ScrollReveal client:load>
+    <ProductShowcase lang={lang} client:load />
+  </ScrollReveal>
+  <ScrollReveal client:load>
+    <WhitepaperCTA lang={lang} />
+  </ScrollReveal>
+  <ScrollReveal client:load>
+    <StatsBanner lang={lang} />
+  </ScrollReveal>
 </BaseLayout>
