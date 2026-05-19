@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import FeatureList from '../../../components/product/FeatureList.tsx';
+import DownloadSection from '../../../components/product/DownloadSection.tsx';
+import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+import { langs } from '../../../i18n/dict';
+import { products } from '../../../config/downloads';
+
+export function getStaticPaths() {
+  return langs.map(lang => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const product = products.find(p => p.slug === 'education')!;
+
+const features = [
+  {
+    icon: '🎓',
+    title: { zh: '实时课堂', en: 'Live Classrooms' },
+    description: { zh: 'WebRTC 驱动的实时语言课堂，高清音视频，互动白板，沉浸式学习。', en: 'WebRTC-powered live classrooms with HD audio/video and interactive whiteboard.' },
+  },
+  {
+    icon: '🏆',
+    title: { zh: '积分激励', en: 'Points Incentive' },
+    description: { zh: '学习赚取积分，链上记录学习成果，NFT 证书认证。', en: 'Earn points through learning, on-chain achievement records, NFT certificates.' },
+  },
+  {
+    icon: '👥',
+    title: { zh: '语言交换', en: 'Language Exchange' },
+    description: { zh: '与母语者 1 对 1 语言交换练习，AI 辅助纠错和翻译。', en: '1-on-1 language exchange with native speakers, AI-assisted corrections.' },
+  },
+  {
+    icon: '📊',
+    title: { zh: '学习追踪', en: 'Learning Tracking' },
+    description: { zh: '全面的学习数据仪表板，进度追踪，个性化学习路径推荐。', en: 'Comprehensive dashboard with progress tracking and personalized learning paths.' },
+  },
+];
+---
+
+<BaseLayout lang={lang} title={product.name[lang]} description={product.description[lang]}>
+  <section class="px-6 pb-12 pt-12">
+    <div class="mx-auto max-w-4xl">
+      <a href={`/${lang}`} class="mb-8 inline-flex text-sm text-[var(--color-text-secondary)] transition-colors hover:text-white">
+        {t('products.back')}
+      </a>
+      <h1 class="mt-4 text-3xl font-bold md:text-4xl">{product.name[lang]}</h1>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-[var(--color-text-secondary)]">{product.description[lang]}</p>
+    </div>
+  </section>
+
+  <section class="px-6 pb-12">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="mb-8 text-2xl font-bold">{lang === 'zh' ? '核心功能' : 'Core Features'}</h2>
+      <FeatureList features={features} lang={lang} client:load />
+    </div>
+  </section>
+
+  <section class="px-6 pb-24">
+    <div class="mx-auto max-w-4xl">
+      <DownloadSection lang={lang} product={product} client:load />
+    </div>
+  </section>
+</BaseLayout>
