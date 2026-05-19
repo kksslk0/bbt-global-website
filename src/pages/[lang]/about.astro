@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { langs } from '../../i18n/dict';
+
+export function getStaticPaths() {
+  return langs.map(lang => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const content = {
+  zh: {
+    vision: 'BBT 致力于成为链上社交操作系统，通过 Web3 技术重构跨语言沟通、社区协作和教育学习的体验。',
+    paragraphs: [
+      'BBT 诞生于一个简单的信念：语言不应该成为连接的障碍。我们构建了一个集翻译、社交和教育于一体的 Web3 生态系统，利用区块链技术保障用户数据主权，通过 AI 实现无缝的跨语言沟通。',
+      '我们的团队由来自区块链、人工智能和语言教育的专业人士组成，分布在全球多个国家，致力于打造下一代社交基础设施。',
+    ],
+    contact: '联系我们',
+    email: 'contact@bbtglobal.io',
+  },
+  en: {
+    vision: 'BBT aims to become the on-chain social operating system, reimagining cross-language communication, community collaboration, and education through Web3 technology.',
+    paragraphs: [
+      'BBT was born from a simple belief: language should never be a barrier to connection. We are building a Web3 ecosystem that integrates translation, social networking, and education — empowering users with data sovereignty through blockchain and seamless cross-language communication through AI.',
+      'Our team comprises professionals from blockchain, AI, and language education, distributed across multiple countries and united by the mission to build the next-generation social infrastructure.',
+    ],
+    contact: 'Contact Us',
+    email: 'contact@bbtglobal.io',
+  },
+};
+---
+
+<BaseLayout lang={lang} title={t('about.title')}>
+  <section class="px-6 pb-24 pt-12">
+    <div class="mx-auto max-w-3xl">
+      <h1 class="text-3xl font-bold md:text-4xl">{t('about.title')}</h1>
+      <p class="mt-6 text-lg leading-relaxed text-[var(--color-text-secondary)]">
+        {content[lang].vision}
+      </p>
+
+      <div class="mt-10 space-y-4">
+        {content[lang].paragraphs.map(p => (
+          <p class="leading-relaxed text-[var(--color-text-secondary)]">{p}</p>
+        ))}
+      </div>
+
+      <div class="mt-16 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
+        <h2 class="text-xl font-semibold">{content[lang].contact}</h2>
+        <a href={`mailto:${content[lang].email}`} class="mt-2 inline-block text-[var(--color-accent)] hover:underline">
+          {content[lang].email}
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

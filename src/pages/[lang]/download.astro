@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DownloadSection from '../../components/product/DownloadSection.tsx';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { langs } from '../../i18n/dict';
+import { products } from '../../config/downloads';
+
+export function getStaticPaths() {
+  return langs.map(lang => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout lang={lang} title={t('download.title')}>
+  <section class="px-6 pb-12 pt-12">
+    <div class="mx-auto max-w-4xl">
+      <h1 class="text-3xl font-bold md:text-4xl">{t('download.title')}</h1>
+      <p class="mt-4 text-lg text-[var(--color-text-secondary)]">
+        {lang === 'zh' ? '选择以下产品开始体验。' : 'Choose a product below to get started.'}
+      </p>
+    </div>
+  </section>
+
+  <section class="space-y-8 px-6 pb-24">
+    <div class="mx-auto max-w-4xl space-y-8">
+      {products.map(product => (
+        <DownloadSection lang={lang} product={product} client:load />
+      ))}
+    </div>
+  </section>
+</BaseLayout>
