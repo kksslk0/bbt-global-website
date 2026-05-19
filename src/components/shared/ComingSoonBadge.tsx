@@ -9,7 +9,7 @@ interface Props {
 export default function ComingSoonBadge({ lang }: Props) {
   const t = useTranslations(lang);
   return (
-    <Badge variant="secondary" className="border-[var(--color-border)] bg-transparent px-3 py-1 text-xs text-[var(--color-text-secondary)]">
+    <Badge variant="outline" class="border-dashed text-muted-foreground">
       {t('badge.comingSoon')}
     </Badge>
   );
