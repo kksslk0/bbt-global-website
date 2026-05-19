@@ -20,14 +20,14 @@ const t = useTranslations(lang);
           <span class="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
         </span>
         <span class="text-xs font-semibold uppercase tracking-[0.16em] text-primary/90">
-          {lang === 'zh' ? 'On-chain social protocol' : 'On-chain social protocol'}
+          {t('home.eyebrow')}
         </span>
       </div>
 
       <h1 class="max-w-4xl text-5xl font-bold leading-[0.96] tracking-tight text-foreground sm:text-6xl md:text-7xl">
         <span class="block">BBT Global</span>
         <span class="mt-3 block text-balance text-primary">
-          {lang === 'zh' ? '把社交、翻译与学习带上链' : 'Social, translation, and learning on-chain'}
+          {t('home.heroLine')}
         </span>
       </h1>
 
@@ -55,9 +55,9 @@ const t = useTranslations(lang);
 
       <div class="mt-12 grid max-w-xl grid-cols-3 gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10">
         {[
-          { k: lang === 'zh' ? '身份' : 'Identity', v: 'Wallet' },
-          { k: lang === 'zh' ? '消息' : 'Messages', v: 'Realtime' },
-          { k: lang === 'zh' ? '语言' : 'Language', v: '100+' },
+          { k: t('home.stat.identity'), v: 'Wallet' },
+          { k: t('home.stat.messages'), v: 'Realtime' },
+          { k: t('home.stat.language'), v: '100+' },
         ].map(item => (
           <div class="bg-background/88 p-4">
             <p class="text-xs uppercase tracking-[0.16em] text-muted-foreground">{item.k}</p>
@@ -79,9 +79,9 @@ const t = useTranslations(lang);
         </div>
         <div class="space-y-3">
           {[
-            { a: '0x7A...B19', b: lang === 'zh' ? '身份验证' : 'Identity check', p: '98%' },
-            { a: 'DAO-CN-08', b: lang === 'zh' ? '跨语言频道' : 'Cross-language room', p: '74%' },
-            { a: 'NFT Gate', b: lang === 'zh' ? '成员权限' : 'Member access', p: '61%' },
+            { a: '0x7A...B19', b: t('home.network.identityCheck'), p: '98%' },
+            { a: 'DAO-CN-08', b: t('home.network.crossLanguage'), p: '74%' },
+            { a: 'NFT Gate', b: t('home.network.memberAccess'), p: '61%' },
           ].map(row => (
             <div class="rounded-lg border border-white/8 bg-white/[0.035] p-3">
               <div class="flex items-center justify-between gap-3 text-sm">
@@ -101,7 +101,7 @@ const t = useTranslations(lang);
           <span class="h-2.5 w-2.5 rounded-full bg-primary"></span>
           <span class="text-xs uppercase tracking-[0.18em] text-muted-foreground">Translator</span>
         </div>
-        <p class="text-sm leading-6 text-muted-foreground">{lang === 'zh' ? '“社区公告已自动翻译并同步到英文频道。”' : '"Community announcement translated and synced to the English channel."'}</p>
+        <p class="text-sm leading-6 text-muted-foreground">{t('home.translatorNote')}</p>
         <div class="mt-4 grid grid-cols-3 gap-2 text-center text-xs">
           <span class="rounded-md bg-white/[0.055] px-2 py-2">ZH</span>
           <span class="rounded-md bg-primary/15 px-2 py-2 text-primary">EN</span>
@@ -112,7 +112,7 @@ const t = useTranslations(lang);
       <div class="absolute bottom-0 right-0 w-[48%] rounded-xl border border-primary/20 bg-primary/10 p-4 shadow-xl backdrop-blur">
         <p class="text-xs uppercase tracking-[0.18em] text-primary/90">Token Gate</p>
         <p class="mt-5 text-3xl font-bold">BBT</p>
-        <p class="mt-1 text-xs text-muted-foreground">{lang === 'zh' ? '链上角色通过' : 'On-chain role passed'}</p>
+        <p class="mt-1 text-xs text-muted-foreground">{t('home.tokenGatePassed')}</p>
       </div>
     </div>
   </div>

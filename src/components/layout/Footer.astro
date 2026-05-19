@@ -11,19 +11,19 @@ const t = useTranslations(lang);
 
 const footerLinks = [
   {
-    title: { zh: '产品', en: 'Products' },
+    title: t('nav.products'),
     links: [
-      { label: { zh: '翻译器', en: 'Translator' }, href: `/${lang}/products/translator` },
-      { label: { zh: '社交', en: 'Social' }, href: `/${lang}/products/social` },
-      { label: { zh: '教育', en: 'Education' }, href: `/${lang}/products/education` },
+      { label: t('nav.translator'), href: `/${lang}/products/translator` },
+      { label: t('nav.social'), href: `/${lang}/products/social` },
+      { label: t('nav.education'), href: `/${lang}/products/education` },
     ],
   },
   {
-    title: { zh: '资源', en: 'Resources' },
+    title: t('footer.resources'),
     links: [
-      { label: { zh: '白皮书', en: 'Whitepaper' }, href: `/${lang}/whitepaper` },
-      { label: { zh: '下载', en: 'Download' }, href: `/${lang}/download` },
-      { label: { zh: '关于我们', en: 'About' }, href: `/${lang}/about` },
+      { label: t('nav.whitepaper'), href: `/${lang}/whitepaper` },
+      { label: t('nav.download'), href: `/${lang}/download` },
+      { label: t('nav.about'), href: `/${lang}/about` },
     ],
   },
 ];
@@ -45,12 +45,12 @@ const footerLinks = [
 
       {footerLinks.map(col => (
         <div>
-          <h4 class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-foreground">{col.title[lang]}</h4>
+          <h4 class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-foreground">{col.title}</h4>
           <ul class="space-y-2">
             {col.links.map(link => (
               <li>
                 <a href={link.href} class="text-sm text-muted-foreground transition-colors hover:text-foreground">
-                  {link.label[lang]}
+                  {link.label}
                 </a>
               </li>
             ))}

@@ -17,23 +17,23 @@ const product = products.find(p => p.slug === 'social')!;
 const features = [
   {
     icon: '💬',
-    title: { zh: '即时通讯', en: 'Instant Messaging' },
-    description: { zh: '私聊、群聊、社区频道，消息实时同步，支持已读状态与推送通知。', en: 'Private chat, group chat, and community channels with real-time sync and push notifications.' },
+    title: { zh: '即时通讯', en: 'Instant Messaging', ko: '실시간 메시징', hi: 'इंस्टेंट मैसेजिंग', es: 'Mensajería instantánea', fr: 'Messagerie instantanée', ar: 'المراسلة الفورية' },
+    description: { zh: '私聊、群聊、社区频道，消息实时同步，支持已读状态与推送通知。', en: 'Private chat, group chat, and community channels with real-time sync and push notifications.', ko: '개인 채팅, 그룹 채팅, 커뮤니티 채널을 실시간 동기화와 알림으로 제공합니다.', hi: 'निजी चैट, समूह चैट और समुदाय चैनल रीयल-टाइम सिंक व नोटिफिकेशन के साथ।', es: 'Chats privados, grupos y canales comunitarios con sincronización en tiempo real y notificaciones.', fr: 'Chats privés, groupes et canaux communautaires avec synchronisation temps réel et notifications.', ar: 'دردشات خاصة وجماعية وقنوات مجتمع مع مزامنة فورية وإشعارات.' },
   },
   {
     icon: '🏛️',
-    title: { zh: '超级社区', en: 'Super Communities' },
-    description: { zh: '万人社区架构，频道管理，角色系统，成员管理一气呵成。', en: 'Massive community architecture with channels, roles, and member management.' },
+    title: { zh: '超级社区', en: 'Super Communities', ko: '슈퍼 커뮤니티', hi: 'सुपर समुदाय', es: 'Supercomunidades', fr: 'Super communautés', ar: 'مجتمعات كبرى' },
+    description: { zh: '万人社区架构，频道管理，角色系统，成员管理一气呵成。', en: 'Massive community architecture with channels, roles, and member management.', ko: '대규모 커뮤니티 구조와 채널, 역할, 멤버 관리를 한곳에서 운영합니다.', hi: 'चैनल, भूमिकाओं और सदस्य प्रबंधन के साथ बड़े समुदायों की संरचना।', es: 'Arquitectura para grandes comunidades con canales, roles y gestión de miembros.', fr: 'Architecture pour grandes communautés avec canaux, rôles et gestion des membres.', ar: 'بنية للمجتمعات الكبيرة مع إدارة القنوات والأدوار والأعضاء.' },
   },
   {
     icon: '🔐',
-    title: { zh: '代币门控', en: 'Token Gating' },
-    description: { zh: 'NFT 和代币门控频道，链上身份验证，角色权限系统。', en: 'NFT and token-gated channels with on-chain identity verification.' },
+    title: { zh: '代币门控', en: 'Token Gating', ko: '토큰 게이팅', hi: 'टोकन गेटिंग', es: 'Acceso por token', fr: 'Accès par token', ar: 'بوابات الرموز' },
+    description: { zh: 'NFT 和代币门控频道，链上身份验证，角色权限系统。', en: 'NFT and token-gated channels with on-chain identity verification.', ko: 'NFT 및 토큰 기반 채널, 온체인 신원 확인, 역할 권한 시스템을 지원합니다.', hi: 'NFT और token-gated चैनल, ऑन-चेन पहचान सत्यापन और भूमिका अनुमतियां।', es: 'Canales con NFT y tokens, verificación on-chain e permisos por rol.', fr: 'Canaux NFT et token-gated avec vérification on-chain et permissions par rôle.', ar: 'قنوات مقيدة بـ NFT والرموز مع تحقق هوية وصلاحيات أدوار على السلسلة.' },
   },
   {
     icon: '🤖',
-    title: { zh: 'AI 摘要', en: 'AI Summarization' },
-    description: { zh: '频道内容自动摘要，关键话题提取，代币和链接智能识别。', en: 'Auto-summarization of channel content with topic and token extraction.' },
+    title: { zh: 'AI 摘要', en: 'AI Summarization', ko: 'AI 요약', hi: 'AI सारांश', es: 'Resumen con IA', fr: 'Résumé IA', ar: 'تلخيص بالذكاء الاصطناعي' },
+    description: { zh: '频道内容自动摘要，关键话题提取，代币和链接智能识别。', en: 'Auto-summarization of channel content with topic and token extraction.', ko: '채널 내용을 자동 요약하고 주요 주제, 토큰, 링크를 인식합니다.', hi: 'चैनल सामग्री का ऑटो-सारांश, विषय और टोकन पहचान के साथ।', es: 'Resumen automático de canales con extracción de temas, tokens y enlaces.', fr: 'Résumé automatique des canaux avec extraction de sujets, tokens et liens.', ar: 'تلخيص تلقائي لمحتوى القنوات مع استخراج المواضيع والرموز والروابط.' },
   },
 ];
 ---
@@ -46,7 +46,7 @@ const features = [
       </a>
       <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
         <div>
-          <p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">Product</p>
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">{t('products.eyebrow')}</p>
           <h1 class="text-4xl font-bold tracking-tight md:text-6xl">{product.name[lang]}</h1>
         </div>
         <p class="max-w-2xl text-lg leading-8 text-muted-foreground">{product.description[lang]}</p>

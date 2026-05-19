@@ -14,7 +14,9 @@
   <script>
     (function() {
       var lang = navigator.language || navigator.userLanguage || '';
-      var target = lang.startsWith('en') ? '/en/' : '/zh/';
+      var supported = ['zh', 'en', 'ko', 'hi', 'es', 'fr', 'ar'];
+      var base = lang.toLowerCase().split('-')[0];
+      var target = supported.indexOf(base) >= 0 ? '/' + base + '/' : '/zh/';
       window.location.replace(target);
     })();
   </script>

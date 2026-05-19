@@ -17,23 +17,23 @@ const product = products.find(p => p.slug === 'education')!;
 const features = [
   {
     icon: '🎓',
-    title: { zh: '实时课堂', en: 'Live Classrooms' },
-    description: { zh: 'WebRTC 驱动的实时语言课堂，高清音视频，互动白板，沉浸式学习。', en: 'WebRTC-powered live classrooms with HD audio/video and interactive whiteboard.' },
+    title: { zh: '实时课堂', en: 'Live Classrooms', ko: '실시간 교실', hi: 'लाइव कक्षाएं', es: 'Aulas en vivo', fr: 'Classes en direct', ar: 'فصول مباشرة' },
+    description: { zh: 'WebRTC 驱动的实时语言课堂，高清音视频，互动白板，沉浸式学习。', en: 'WebRTC-powered live classrooms with HD audio/video and interactive whiteboard.', ko: 'WebRTC 기반 실시간 언어 수업, HD 오디오/비디오, 인터랙티브 화이트보드를 제공합니다.', hi: 'WebRTC आधारित लाइव भाषा कक्षाएं, HD ऑडियो/वीडियो और इंटरैक्टिव व्हाइटबोर्ड।', es: 'Aulas de idiomas en vivo con WebRTC, audio/video HD y pizarra interactiva.', fr: 'Classes de langues en direct via WebRTC avec audio/vidéo HD et tableau interactif.', ar: 'فصول لغة مباشرة عبر WebRTC مع صوت/فيديو عالي الدقة ولوح تفاعلي.' },
   },
   {
     icon: '🏆',
-    title: { zh: '积分激励', en: 'Points Incentive' },
-    description: { zh: '学习赚取积分，链上记录学习成果，NFT 证书认证。', en: 'Earn points through learning, on-chain achievement records, NFT certificates.' },
+    title: { zh: '积分激励', en: 'Points Incentive', ko: '포인트 보상', hi: 'पॉइंट प्रोत्साहन', es: 'Incentivos por puntos', fr: 'Incitation par points', ar: 'حوافز بالنقاط' },
+    description: { zh: '学习赚取积分，链上记录学习成果，NFT 证书认证。', en: 'Earn points through learning, on-chain achievement records, NFT certificates.', ko: '학습으로 포인트를 얻고 성과를 온체인에 기록하며 NFT 인증서를 발급합니다.', hi: 'सीखकर पॉइंट कमाएं, उपलब्धियां ऑन-चेन दर्ज करें और NFT प्रमाणपत्र पाएं।', es: 'Gana puntos aprendiendo, registra logros on-chain y recibe certificados NFT.', fr: 'Gagnez des points, enregistrez vos progrès on-chain et obtenez des certificats NFT.', ar: 'اكسب نقاطًا عبر التعلم وسجّل الإنجازات على السلسلة واحصل على شهادات NFT.' },
   },
   {
     icon: '👥',
-    title: { zh: '语言交换', en: 'Language Exchange' },
-    description: { zh: '与母语者 1 对 1 语言交换练习，AI 辅助纠错和翻译。', en: '1-on-1 language exchange with native speakers, AI-assisted corrections.' },
+    title: { zh: '语言交换', en: 'Language Exchange', ko: '언어 교환', hi: 'भाषा विनिमय', es: 'Intercambio de idiomas', fr: 'Échange linguistique', ar: 'تبادل اللغات' },
+    description: { zh: '与母语者 1 对 1 语言交换练习，AI 辅助纠错和翻译。', en: '1-on-1 language exchange with native speakers, AI-assisted corrections.', ko: '원어민과 1:1 언어 교환을 하고 AI가 교정과 번역을 돕습니다.', hi: 'मूल वक्ताओं के साथ 1-से-1 भाषा अभ्यास और AI-सहायता सुधार।', es: 'Intercambio 1 a 1 con hablantes nativos y correcciones asistidas por IA.', fr: 'Échange 1:1 avec des natifs et corrections assistées par IA.', ar: 'تبادل لغة فردي مع متحدثين أصليين وتصحيح بمساعدة الذكاء الاصطناعي.' },
   },
   {
     icon: '📊',
-    title: { zh: '学习追踪', en: 'Learning Tracking' },
-    description: { zh: '全面的学习数据仪表板，进度追踪，个性化学习路径推荐。', en: 'Comprehensive dashboard with progress tracking and personalized learning paths.' },
+    title: { zh: '学习追踪', en: 'Learning Tracking', ko: '학습 추적', hi: 'लर्निंग ट्रैकिंग', es: 'Seguimiento del aprendizaje', fr: 'Suivi d’apprentissage', ar: 'تتبع التعلم' },
+    description: { zh: '全面的学习数据仪表板，进度追踪，个性化学习路径推荐。', en: 'Comprehensive dashboard with progress tracking and personalized learning paths.', ko: '학습 데이터 대시보드, 진도 추적, 개인화 학습 경로 추천을 제공합니다.', hi: 'प्रगति ट्रैकिंग और व्यक्तिगत सीखने के मार्गों वाला व्यापक डैशबोर्ड।', es: 'Panel completo con seguimiento de progreso y rutas de aprendizaje personalizadas.', fr: 'Tableau de bord complet avec suivi des progrès et parcours personnalisés.', ar: 'لوحة تعلم شاملة مع تتبع التقدم ومسارات تعلم مخصصة.' },
   },
 ];
 ---
@@ -46,7 +46,7 @@ const features = [
       </a>
       <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
         <div>
-          <p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">Product</p>
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">{t('products.eyebrow')}</p>
           <h1 class="text-4xl font-bold tracking-tight md:text-6xl">{product.name[lang]}</h1>
         </div>
         <p class="max-w-2xl text-lg leading-8 text-muted-foreground">{product.description[lang]}</p>

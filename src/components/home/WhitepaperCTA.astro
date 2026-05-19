@@ -31,13 +31,13 @@ const t = useTranslations(lang);
     </div>
     <div class="p-8 md:p-10">
       <p class="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-      {lang === 'zh' ? '深度了解' : 'Deep Dive'}
+      {t('whitepaper.deepDive')}
     </p>
       <div class="grid gap-3 sm:grid-cols-3">
         {[
-          lang === 'zh' ? '技术架构' : 'Architecture',
-          lang === 'zh' ? '代币经济' : 'Tokenomics',
-          lang === 'zh' ? '生态路线' : 'Roadmap',
+          t('whitepaper.architecture'),
+          t('whitepaper.tokenomics'),
+          t('whitepaper.roadmap'),
         ].map(item => (
           <div class="rounded-lg border border-white/10 bg-background/70 p-4">
             <div class="mb-5 h-1.5 w-10 rounded-full bg-primary"></div>

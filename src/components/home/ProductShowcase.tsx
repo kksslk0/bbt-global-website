@@ -23,16 +23,14 @@ export default function ProductShowcase({ lang }: Props) {
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">
-            {lang === 'zh' ? '产品生态' : 'Product Ecosystem'}
+            {t('home.productEyebrow')}
           </p>
           <h2 className="max-w-2xl text-3xl font-bold tracking-tight md:text-5xl">
-            {lang === 'zh' ? '三个入口，一套链上身份' : 'Three entries, one on-chain identity'}
+            {t('home.productHeadline')}
           </h2>
           </div>
           <p className="max-w-md text-sm leading-6 text-muted-foreground">
-            {lang === 'zh'
-              ? '围绕沟通、社区与学习构建，不把用户数据锁进平台。'
-              : 'Built around communication, community, and learning without locking user data into a platform.'}
+            {t('home.productIntro')}
           </p>
         </div>
 

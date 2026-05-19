@@ -1,12 +1,14 @@
+import type { Lang } from '../../i18n/dict';
+
 interface Feature {
   icon: string;
-  title: { zh: string; en: string };
-  description: { zh: string; en: string };
+  title: Record<Lang, string>;
+  description: Record<Lang, string>;
 }
 
 interface Props {
   features: Feature[];
-  lang: 'zh' | 'en';
+  lang: Lang;
 }
 
 export default function FeatureList({ features, lang }: Props) {
