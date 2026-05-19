@@ -1,8 +1,22 @@
 ---
-// Redirect root to default language based on Accept-Language or fallback to /zh
-const acceptLang = Astro.request.headers.get('accept-language') || '';
-const prefersZh = acceptLang.includes('zh');
-const target = prefersZh ? '/zh' : '/en';
-
-return Astro.redirect(target, 302);
+// Static redirect: client-side language detection for static hosting
+// Falls back to /zh if no JS or language detection fails
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="refresh" content="0;url=/zh" />
+  <title>BBT Global</title>
+</head>
+<body>
+  <script>
+    (function() {
+      var lang = navigator.language || navigator.userLanguage || '';
+      var target = lang.startsWith('en') ? '/en' : '/zh';
+      window.location.replace(target);
+    })();
+  </script>
+</body>
+</html>
