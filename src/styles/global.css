@@ -1,32 +1,59 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-primary: #0a0a0f;
-  --color-bg-secondary: #111118;
-  --color-bg-card: #1a1a24;
-  --color-text-primary: #ffffff;
-  --color-text-secondary: #a1a1aa;
-  --color-accent: #3b82f6;
-  --color-accent-hover: #2563eb;
-  --color-border: #27272a;
+  --color-bg-base: #050508;
+  --color-bg-elevated: #0a0a12;
+  --color-bg-card: rgba(15, 15, 30, 0.6);
+  --color-text-primary: #f1f1f3;
+  --color-text-secondary: #8b8b99;
+  --color-text-muted: #5c5c6a;
+  --color-accent: #4f8cff;
+  --color-accent-soft: #7c6ff7;
+  --color-accent-teal: #2dd4bf;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-strong: rgba(255, 255, 255, 0.1);
+  --color-glow-blue: rgba(79, 140, 255, 0.15);
+  --color-glow-purple: rgba(124, 111, 247, 0.12);
   --font-sans: "DM Sans", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-bg-base);
   }
 
   body {
-    background-color: var(--color-bg-primary);
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(79, 140, 255, 0.06), transparent 70%),
+                radial-gradient(ellipse 60% 50% at 0% 100%, rgba(124, 111, 247, 0.05), transparent 70%),
+                var(--color-bg-base);
     color: var(--color-text-primary);
     font-family: var(--font-sans);
   }
 
   ::selection {
-    background-color: var(--color-accent);
+    background-color: rgba(79, 140, 255, 0.4);
     color: white;
   }
+}
+
+/* Subtle grid overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black, transparent);
 }

@@ -8,16 +8,58 @@ export interface Props {
 
 const { lang } = Astro.props;
 const t = useTranslations(lang);
+
+const footerLinks = [
+  {
+    title: { zh: '产品', en: 'Products' },
+    links: [
+      { label: { zh: '翻译器', en: 'Translator' }, href: `/${lang}/products/translator` },
+      { label: { zh: '社交', en: 'Social' }, href: `/${lang}/products/social` },
+      { label: { zh: '教育', en: 'Education' }, href: `/${lang}/products/education` },
+    ],
+  },
+  {
+    title: { zh: '资源', en: 'Resources' },
+    links: [
+      { label: { zh: '白皮书', en: 'Whitepaper' }, href: `/${lang}/whitepaper` },
+      { label: { zh: '下载', en: 'Download' }, href: `/${lang}/download` },
+      { label: { zh: '关于我们', en: 'About' }, href: `/${lang}/about` },
+    ],
+  },
+];
 ---
 
-<footer class="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
-  <div class="mx-auto max-w-7xl px-6 py-12">
-    <div class="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+<footer class="relative border-t border-[var(--color-border-strong)] bg-[var(--color-bg-elevated)]">
+  <div class="mx-auto max-w-7xl px-6 py-16">
+    <div class="grid gap-12 md:grid-cols-3">
       <div>
-        <p class="text-sm font-semibold">BBT Global</p>
-        <p class="mt-1 text-xs text-[var(--color-text-secondary)]">{t('footer.tagline')}</p>
+        <div class="flex items-center gap-2.5 mb-4">
+          <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[var(--color-accent)] to-[var(--color-accent-soft)]">
+            <span class="text-sm font-bold text-white">B</span>
+          </div>
+          <span class="text-base font-semibold text-white">BBT<span class="text-[var(--color-accent)]"> Global</span></span>
+        </div>
+        <p class="text-sm text-[var(--color-text-secondary)]">{t('footer.tagline')}</p>
       </div>
-      <p class="text-xs text-[var(--color-text-secondary)]">
+
+      {footerLinks.map(col => (
+        <div>
+          <h4 class="mb-4 text-sm font-semibold text-white">{col.title[lang]}</h4>
+          <ul class="space-y-2">
+            {col.links.map(link => (
+              <li>
+                <a href={link.href} class="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-white">
+                  {link.label[lang]}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-[var(--color-border)]">
+      <p class="text-xs text-[var(--color-text-muted)] text-center">
         &copy; {new Date().getFullYear()} {t('footer.copyright')}
       </p>
     </div>

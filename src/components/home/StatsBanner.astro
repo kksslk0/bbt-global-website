@@ -13,13 +13,13 @@ export interface Props {
 const { lang } = Astro.props;
 ---
 
-<section class="px-6 pb-24">
+<section class="px-6 pb-32">
   <div class="mx-auto max-w-4xl">
-    <div class="grid grid-cols-3 gap-8 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] px-12 py-10">
-      {stats.map(s => (
-        <div class="text-center">
-          <p class="text-3xl font-bold">{s.value}</p>
-          <p class="mt-1 text-xs text-[var(--color-text-secondary)]">
+    <div class="grid grid-cols-3 divide-x divide-[var(--color-border)] rounded-2xl border border-[var(--color-border-strong)] bg-[var(--color-bg-card)] backdrop-blur-xl">
+      {stats.map((s, i) => (
+        <div class="py-10 text-center">
+          <p class="text-4xl font-bold bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">{s.value}</p>
+          <p class="mt-2 text-xs font-medium text-[var(--color-text-muted)]">
             {lang === 'zh' ? s.labelZh : s.labelEn}
           </p>
         </div>
