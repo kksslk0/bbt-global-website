@@ -10,7 +10,7 @@ export default function ParticleBackground() {
     const isDesktop = window.innerWidth > 768;
     if (!isDesktop) return;
 
-    let animId: number;
+    let animId = 0;
 
     import('three').then((THREE) => {
       const scene = new THREE.Scene();
@@ -56,11 +56,18 @@ export default function ParticleBackground() {
 
       const onResize = () => {
         if (window.innerWidth <= 768) {
+          if (animId) {
+            cancelAnimationFrame(animId);
+            animId = 0;
+          }
           renderer.setSize(0, 0);
         } else {
           camera.aspect = window.innerWidth / window.innerHeight;
           camera.updateProjectionMatrix();
           renderer.setSize(window.innerWidth, window.innerHeight);
+          if (!animId) {
+            animate();
+          }
         }
       };
 
@@ -69,7 +76,8 @@ export default function ParticleBackground() {
       const onVisibility = () => {
         if (document.hidden) {
           cancelAnimationFrame(animId);
-        } else if (window.innerWidth > 768) {
+          animId = 0;
+        } else if (window.innerWidth > 768 && !animId) {
           animate();
         }
       };
