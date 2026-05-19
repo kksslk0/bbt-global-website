@@ -19,27 +19,31 @@ const navItems = [
 ];
 
 function isActive(itemHref: string, current: string): boolean {
+  if (itemHref.endsWith('/products/social')) {
+    return current.includes('/products/');
+  }
   return current.startsWith(itemHref);
 }
 ---
 
-<header class="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 h-16">
-    <a href={`/${lang}`} class="flex items-center gap-2 font-semibold text-lg">
-      <div class="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-bold">
-        B
+<header class="sticky top-0 z-50 border-b border-white/10 bg-background/82 backdrop-blur-xl supports-[backdrop-filter]:bg-background/72">
+  <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-y-3 px-5 py-3 sm:px-6">
+    <a href={`/${lang}`} class="flex items-center gap-3 font-semibold text-lg tracking-tight">
+      <div class="relative flex h-9 w-9 items-center justify-center rounded-lg border border-primary/35 bg-primary/12 text-sm font-bold text-primary shadow-[0_0_28px_rgba(44,225,181,0.16)]">
+        <span class="absolute inset-1 rounded-[5px] border border-white/10"></span>
+        <span>B</span>
       </div>
-      BBT<span class="text-primary"> Global</span>
+      <span>BBT<span class="text-primary"> Global</span></span>
     </a>
 
-    <nav class="hidden items-center gap-1 md:flex">
+    <nav class="order-3 flex w-full items-center gap-1 overflow-x-auto rounded-full border border-white/10 bg-white/[0.035] p-1 md:order-none md:w-auto md:overflow-visible">
       {navItems.map(item => (
         <a
           href={item.href}
-          class={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+          class={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
             isActive(item.href, currentPath)
-              ? 'text-foreground bg-accent'
-              : 'text-muted-foreground hover:text-foreground hover:bg-accent'
+              ? 'bg-primary text-primary-foreground'
+              : 'text-muted-foreground hover:bg-white/[0.06] hover:text-foreground'
           }`}
         >
           {item.label}

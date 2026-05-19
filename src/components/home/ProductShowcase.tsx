@@ -18,40 +18,52 @@ export default function ProductShowcase({ lang }: Props) {
   const t = useTranslations(lang);
 
   return (
-    <section class="px-6 pb-24">
-      <div class="mx-auto max-w-6xl">
-        <div class="mb-12 text-center">
-          <p class="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+    <section className="px-5 pb-24 sm:px-6">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">
             {lang === 'zh' ? '产品生态' : 'Product Ecosystem'}
           </p>
-          <h2 class="text-3xl font-bold tracking-tight">{t('products.title')}</h2>
+          <h2 className="max-w-2xl text-3xl font-bold tracking-tight md:text-5xl">
+            {lang === 'zh' ? '三个入口，一套链上身份' : 'Three entries, one on-chain identity'}
+          </h2>
+          </div>
+          <p className="max-w-md text-sm leading-6 text-muted-foreground">
+            {lang === 'zh'
+              ? '围绕沟通、社区与学习构建，不把用户数据锁进平台。'
+              : 'Built around communication, community, and learning without locking user data into a platform.'}
+          </p>
         </div>
 
-        <div class="grid gap-6 md:grid-cols-3">
-          {products.map((p) => {
+        <div className="grid gap-4 md:grid-cols-3">
+          {products.map((p, index) => {
             const Icon = icons[p.icon] ?? MessageCircle;
 
             return (
-              <a href={`/${lang}/products/${p.slug}`} class="group">
-                <Card class="h-full border bg-card transition-shadow hover:shadow-md">
-                  <CardHeader>
-                    <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                      <Icon class="h-6 w-6 text-primary" />
+              <a key={p.slug} href={`/${lang}/products/${p.slug}`} className="group">
+                <Card className="relative h-full border border-white/10 bg-white/[0.035] p-2 transition-all duration-300 hover:-translate-y-1 hover:border-primary/35 hover:bg-white/[0.055] hover:shadow-[0_22px_70px_rgba(0,0,0,0.28)]">
+                  <CardHeader className="p-5">
+                    <div className="mb-5 flex items-center justify-between">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-primary/25 bg-primary/10">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <span className="font-mono text-xs text-muted-foreground">0{index + 1}</span>
                     </div>
-                    <CardTitle class="flex items-center gap-2">
+                    <CardTitle className="flex items-center gap-2 text-xl">
                       {p.name[lang]}
                       {!p.available && (
-                        <span class="inline-flex items-center rounded-md border border-dashed px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                        <span className="inline-flex items-center rounded-full border border-dashed border-white/15 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
                           {t('badge.comingSoon')}
                         </span>
                       )}
                     </CardTitle>
-                    <CardDescription>{p.description[lang]}</CardDescription>
+                    <CardDescription className="mt-3 min-h-14 leading-6">{p.description[lang]}</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <span class="inline-flex items-center gap-2 text-sm font-medium text-primary group-hover:underline">
+                  <CardContent className="px-5 pb-5">
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
                       {t('cta.learnMore')}
-                      <ArrowRight class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                      <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </CardContent>
                 </Card>

@@ -21,11 +21,11 @@ export default function DownloadButton({ lang, available, downloadUrl, fileSize,
 
   return (
     <a href={downloadUrl!} download>
-      <Button size="lg" class="gap-2">
-        <Download class="h-4 w-4" />
+      <Button size="lg" className="h-11 gap-2 bg-primary px-5 font-bold text-primary-foreground hover:bg-primary/90">
+        <Download className="h-4 w-4" />
         {t('cta.download')}
         {(version || fileSize) && (
-          <span class="ml-1 text-xs opacity-50">
+          <span className="ml-1 text-xs opacity-65">
             {version && `v${version}`}
             {fileSize && ` (${fileSize})`}
           </span>

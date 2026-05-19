@@ -12,13 +12,18 @@ interface Props {
 export default function DownloadSection({ lang, product }: Props) {
   const t = useTranslations(lang);
   return (
-    <Card class="text-center p-10">
-      <CardContent class="p-0">
-        <h3 class="text-2xl font-bold">{product.name[lang]}</h3>
-        <p class="mt-3 text-sm text-muted-foreground">
+    <Card className="border border-white/10 bg-white/[0.035] p-6 md:p-8">
+      <CardContent className="flex flex-col gap-6 p-0 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">
+          {product.available ? t('badge.available') : t('badge.comingSoon')}
+        </p>
+        <h3 className="text-2xl font-bold">{product.name[lang]}</h3>
+        <p className="mt-3 text-sm text-muted-foreground">
           {product.available ? t('product.available') : t('product.unavailable')}
         </p>
-        <div class="mt-8 flex justify-center">
+        </div>
+        <div className="flex shrink-0">
           <DownloadButton
             lang={lang}
             available={product.available}
