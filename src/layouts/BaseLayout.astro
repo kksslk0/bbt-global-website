@@ -25,7 +25,9 @@ const dir = lang === 'ar' ? 'rtl' : 'ltr';
   {description && <meta name="description" content={description} />}
   <meta property="og:title" content={fullTitle} />
   {description && <meta property="og:description" content={description} />}
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:image" content="/og-image.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/brand/bbt-logo.png" />
 </head>
 <body class="min-h-screen bg-background text-foreground font-sans antialiased">
   <ParticleBackground client:load />
