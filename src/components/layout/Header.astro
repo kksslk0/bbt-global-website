@@ -1,0 +1,52 @@
+---
+import LanguagePicker from '../shared/LanguagePicker.tsx';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import type { Lang } from '../../i18n/dict';
+
+export interface Props {
+  lang: Lang;
+  currentPath: string;
+}
+
+const { lang, currentPath } = Astro.props;
+const t = useTranslations(lang);
+
+const navItems = [
+  { label: t('nav.products'), href: `/${lang}/products/social` },
+  { label: t('nav.whitepaper'), href: `/${lang}/whitepaper` },
+  { label: t('nav.download'), href: `/${lang}/download` },
+  { label: t('nav.about'), href: `/${lang}/about` },
+];
+
+function isActive(itemHref: string, current: string): boolean {
+  return current.startsWith(itemHref);
+}
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg-primary)]/80 backdrop-blur-xl">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <a href={`/${lang}`} class="text-lg font-bold tracking-tight">
+      BBT<span class="text-[var(--color-accent)]"> Global</span>
+    </a>
+
+    <div class="hidden items-center gap-8 md:flex">
+      {navItems.map(item => (
+        <a
+          href={item.href}
+          class={`text-sm transition-colors hover:text-white ${
+            isActive(item.href, currentPath) ? 'text-white' : 'text-[var(--color-text-secondary)]'
+          }`}
+        >
+          {item.label}
+        </a>
+      ))}
+    </div>
+
+    <div class="flex items-center gap-4">
+      <LanguagePicker lang={lang} currentPath={currentPath} client:load />
+    </div>
+  </nav>
+</header>
+
+<!-- Spacer for fixed header -->
+<div class="h-[73px]"></div>
