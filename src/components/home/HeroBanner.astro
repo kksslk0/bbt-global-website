@@ -1,0 +1,30 @@
+---
+import { useTranslations } from '../../i18n/utils';
+import type { Lang } from '../../i18n/dict';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section class="relative overflow-hidden px-6 pb-24 pt-20">
+  <div class="relative z-10 mx-auto max-w-4xl text-center">
+    <h1 class="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
+      {t('home.title')}
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[var(--color-text-secondary)] md:text-lg">
+      {t('home.subtitle')}
+    </p>
+    <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+      <a href={`/${lang}/download`} class="inline-flex rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black transition-all hover:bg-gray-200">
+        {t('cta.download')}
+      </a>
+      <a href={`/${lang}/whitepaper`} class="inline-flex rounded-lg border border-[var(--color-border)] px-6 py-3 text-sm font-medium text-white transition-all hover:border-white/30 hover:bg-white/5">
+        {t('cta.whitepaper')}
+      </a>
+    </div>
+  </div>
+</section>

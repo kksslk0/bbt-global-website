@@ -1,0 +1,29 @@
+---
+const stats = [
+  { value: '—', labelZh: '活跃用户', labelEn: 'Active Users' },
+  { value: '—', labelZh: '社区数量', labelEn: 'Communities' },
+  { value: '—', labelZh: '支持语言', labelEn: 'Languages' },
+];
+import type { Lang } from '../../i18n/dict';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="px-6 pb-24">
+  <div class="mx-auto max-w-4xl">
+    <div class="grid grid-cols-3 gap-8 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-card)] px-12 py-10">
+      {stats.map(s => (
+        <div class="text-center">
+          <p class="text-3xl font-bold">{s.value}</p>
+          <p class="mt-1 text-xs text-[var(--color-text-secondary)]">
+            {lang === 'zh' ? s.labelZh : s.labelEn}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
