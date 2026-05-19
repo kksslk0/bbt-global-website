@@ -1,0 +1,8 @@
+---
+// Redirect root to default language based on Accept-Language or fallback to /zh
+const acceptLang = Astro.request.headers.get('accept-language') || '';
+const prefersZh = acceptLang.includes('zh');
+const target = prefersZh ? '/zh' : '/en';
+
+return Astro.redirect(target, 302);
+---
