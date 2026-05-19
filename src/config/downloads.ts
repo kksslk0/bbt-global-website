@@ -11,6 +11,8 @@ export interface ProductDownload {
   downloadUrl: string | null;
   fileSize: string | null;
   version: string | null;
+  actionLabel?: LocalizedText;
+  actionHint?: LocalizedText;
 }
 
 export const products: ProductDownload[] = [
@@ -87,9 +89,27 @@ export const products: ProductDownload[] = [
       ar: 'فصول لغة مباشرة عبر WebRTC مع نظام حوافز بالنقاط وشهادات تعلم NFT.',
     },
     icon: 'GraduationCap',
-    available: false,
-    downloadUrl: null,
+    available: true,
+    downloadUrl: 'https://bbtlanguage.com',
     fileSize: null,
     version: null,
+    actionLabel: {
+      zh: '打开演示',
+      en: 'Open Demo',
+      ko: '데모 열기',
+      hi: 'डेमो खोलें',
+      es: 'Abrir demo',
+      fr: 'Ouvrir la démo',
+      ar: 'فتح العرض التجريبي',
+    },
+    actionHint: {
+      zh: '点击下方按钮进入 BBT 教育演示站。',
+      en: 'Click below to open the BBT Education demo.',
+      ko: '아래 버튼을 눌러 BBT 교육 데모를 여세요.',
+      hi: 'BBT Education डेमो खोलने के लिए नीचे क्लिक करें।',
+      es: 'Haz clic abajo para abrir la demo de BBT Educación.',
+      fr: 'Cliquez ci-dessous pour ouvrir la démo de BBT Éducation.',
+      ar: 'اضغط أدناه لفتح العرض التجريبي لـ BBT للتعليم.',
+    },
   },
 ];

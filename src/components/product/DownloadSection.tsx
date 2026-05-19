@@ -20,7 +20,7 @@ export default function DownloadSection({ lang, product }: Props) {
         </p>
         <h3 className="text-2xl font-bold">{product.name[lang]}</h3>
         <p className="mt-3 text-sm text-muted-foreground">
-          {product.available ? t('product.available') : t('product.unavailable')}
+          {product.actionHint?.[lang] ?? (product.available ? t('product.available') : t('product.unavailable'))}
         </p>
         </div>
         <div className="flex shrink-0">
@@ -30,6 +30,7 @@ export default function DownloadSection({ lang, product }: Props) {
             downloadUrl={product.downloadUrl}
             fileSize={product.fileSize}
             version={product.version}
+            label={product.actionLabel?.[lang]}
           />
         </div>
       </CardContent>
