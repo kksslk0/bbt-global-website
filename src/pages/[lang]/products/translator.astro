@@ -17,23 +17,23 @@ const product = products.find(p => p.slug === 'translator')!;
 const features = [
   {
     icon: '🌐',
-    title: { zh: '多语言翻译', en: 'Multilingual Translation', ko: '다국어 번역', hi: 'बहुभाषी अनुवाद', es: 'Traducción multilingüe', fr: 'Traduction multilingue', ar: 'ترجمة متعددة اللغات' },
-    description: { zh: '支持 100+ 语言实时互译，覆盖文本、语音和图片翻译场景。', en: 'Real-time translation across 100+ languages covering text, voice, and image.', ko: '텍스트, 음성, 이미지 번역을 포함해 100개 이상의 언어를 실시간으로 지원합니다.', hi: 'टेक्स्ट, वॉइस और इमेज के लिए 100+ भाषाओं में रीयल-टाइम अनुवाद।', es: 'Traducción en tiempo real en más de 100 idiomas para texto, voz e imágenes.', fr: 'Traduction en temps réel dans plus de 100 langues pour texte, voix et images.', ar: 'ترجمة فورية لأكثر من 100 لغة للنص والصوت والصور.' },
+    title: { zh: '多語言翻譯', en: 'Multilingual Translation', ja: '多言語翻訳', ko: '다국어 번역', hi: 'बहुभाषी अनुवाद', es: 'Traducción multilingüe', fr: 'Traduction multilingue', ar: 'ترجمة متعددة اللغات' },
+    description: { zh: '支援 100+ 語言即時互譯，覆蓋文字、語音和圖片翻譯場景。', en: 'Real-time translation across 100+ languages covering text, voice, and image.', ja: '100 以上の言語でテキスト、音声、画像のリアルタイム翻訳に対応します。', ko: '텍스트, 음성, 이미지 번역을 포함해 100개 이상의 언어를 실시간으로 지원합니다.', hi: 'टेक्स्ट, वॉइस और इमेज के लिए 100+ भाषाओं में रीयल-टाइम अनुवाद।', es: 'Traducción en tiempo real en más de 100 idiomas para texto, voz e imágenes.', fr: 'Traduction en temps réel dans plus de 100 langues pour texte, voix et images.', ar: 'ترجمة فورية لأكثر من 100 لغة للنص والصوت والصور.' },
   },
   {
     icon: '🎙️',
-    title: { zh: '语音识别', en: 'Voice Recognition', ko: '음성 인식', hi: 'वॉइस रिकग्निशन', es: 'Reconocimiento de voz', fr: 'Reconnaissance vocale', ar: 'التعرف على الصوت' },
-    description: { zh: '高精度语音转文字，实时翻译输出，跨语言无障碍沟通。', en: 'High-accuracy speech-to-text with real-time translation output.', ko: '고정밀 음성-텍스트 변환과 실시간 번역 출력으로 언어 장벽을 낮춥니다.', hi: 'उच्च-सटीकता speech-to-text और रीयल-टाइम अनुवाद आउटपुट।', es: 'Voz a texto de alta precisión con traducción en tiempo real.', fr: 'Transcription vocale haute précision avec traduction en temps réel.', ar: 'تحويل دقيق من الكلام إلى نص مع ترجمة فورية.' },
+    title: { zh: '語音辨識', en: 'Voice Recognition', ja: '音声認識', ko: '음성 인식', hi: 'वॉइस रिकग्निशन', es: 'Reconocimiento de voz', fr: 'Reconnaissance vocale', ar: 'التعرف على الصوت' },
+    description: { zh: '高精度語音轉文字，即時翻譯輸出，跨語言無障礙溝通。', en: 'High-accuracy speech-to-text with real-time translation output.', ja: '高精度の音声文字起こしとリアルタイム翻訳で、言語の壁を下げます。', ko: '고정밀 음성-텍스트 변환과 실시간 번역 출력으로 언어 장벽을 낮춥니다.', hi: 'उच्च-सटीकता speech-to-text और रीयल-टाइम अनुवाद आउटपुट।', es: 'Voz a texto de alta precisión con traducción en tiempo real.', fr: 'Transcription vocale haute précision avec traduction en temps réel.', ar: 'تحويل دقيق من الكلام إلى نص مع ترجمة فورية.' },
   },
   {
     icon: '📄',
-    title: { zh: '文档翻译', en: 'Document Translation', ko: '문서 번역', hi: 'दस्तावेज़ अनुवाद', es: 'Traducción de documentos', fr: 'Traduction de documents', ar: 'ترجمة المستندات' },
-    description: { zh: 'PDF、Word、PPT 等文档格式完整翻译，保留原始排版。', en: 'Full document translation for PDF, Word, PPT preserving original formatting.', ko: 'PDF, Word, PPT 문서를 원본 레이아웃을 유지하며 번역합니다.', hi: 'PDF, Word और PPT का मूल फ़ॉर्मैट बनाए रखते हुए पूर्ण अनुवाद।', es: 'Traducción completa de PDF, Word y PPT conservando el formato original.', fr: 'Traduction complète de PDF, Word et PPT en conservant la mise en page.', ar: 'ترجمة كاملة لملفات PDF وWord وPPT مع الحفاظ على التنسيق.' },
+    title: { zh: '文件翻譯', en: 'Document Translation', ja: 'ドキュメント翻訳', ko: '문서 번역', hi: 'दस्तावेज़ अनुवाद', es: 'Traducción de documentos', fr: 'Traduction de documents', ar: 'ترجمة المستندات' },
+    description: { zh: 'PDF、Word、PPT 等文件格式完整翻譯，保留原始排版。', en: 'Full document translation for PDF, Word, PPT preserving original formatting.', ja: 'PDF、Word、PPT などの文書をレイアウトを保ったまま翻訳します。', ko: 'PDF, Word, PPT 문서를 원본 레이아웃을 유지하며 번역합니다.', hi: 'PDF, Word और PPT का मूल फ़ॉर्मैट बनाए रखते हुए पूर्ण अनुवाद।', es: 'Traducción completa de PDF, Word y PPT conservando el formato original.', fr: 'Traduction complète de PDF, Word et PPT en conservant la mise en page.', ar: 'ترجمة كاملة لملفات PDF وWord وPPT مع الحفاظ على التنسيق.' },
   },
   {
     icon: '⚡',
-    title: { zh: 'AI 驱动', en: 'AI Powered', ko: 'AI 기반', hi: 'AI संचालित', es: 'Impulsado por IA', fr: 'Propulsé par l’IA', ar: 'مدعوم بالذكاء الاصطناعي' },
-    description: { zh: '基于最新大语言模型，上下文感知翻译，专业术语准确。', en: 'Context-aware translation powered by latest LLMs with precise terminology.', ko: '최신 LLM 기반의 문맥 인식 번역으로 전문 용어까지 정확하게 처리합니다.', hi: 'नवीनतम LLMs से संदर्भ-सजग अनुवाद और सटीक शब्दावली।', es: 'Traducción sensible al contexto con LLMs recientes y terminología precisa.', fr: 'Traduction contextuelle via LLMs récents avec terminologie précise.', ar: 'ترجمة واعية بالسياق عبر أحدث نماذج اللغة مع مصطلحات دقيقة.' },
+    title: { zh: 'AI 驅動', en: 'AI Powered', ja: 'AI 駆動', ko: 'AI 기반', hi: 'AI संचालित', es: 'Impulsado por IA', fr: 'Propulsé par l’IA', ar: 'مدعوم بالذكاء الاصطناعي' },
+    description: { zh: '基於最新大型語言模型，上下文感知翻譯，專業術語準確。', en: 'Context-aware translation powered by latest LLMs with precise terminology.', ja: '最新の LLM による文脈理解型翻訳で、専門用語も正確に扱います。', ko: '최신 LLM 기반의 문맥 인식 번역으로 전문 용어까지 정확하게 처리합니다.', hi: 'नवीनतम LLMs से संदर्भ-सजग अनुवाद और सटीक शब्दावली।', es: 'Traducción sensible al contexto con LLMs recientes y terminología precisa.', fr: 'Traduction contextuelle via LLMs récents avec terminologie précise.', ar: 'ترجمة واعية بالسياق عبر أحدث نماذج اللغة مع مصطلحات دقيقة.' },
   },
 ];
 ---

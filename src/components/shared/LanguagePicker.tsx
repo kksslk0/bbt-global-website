@@ -9,6 +9,7 @@ interface Props {
 const labels: Record<Lang, string> = {
   zh: '中',
   en: 'EN',
+  ja: '日本',
   ko: '한국',
   hi: 'हिन्दी',
   es: 'ES',
