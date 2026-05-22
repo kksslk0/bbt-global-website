@@ -7,7 +7,8 @@ interface Props {
 }
 
 const labels: Record<Lang, string> = {
-  zh: '中',
+  zh: '繁',
+  'zh-cn': '简',
   en: 'EN',
   ja: '日本',
   ko: '한국',

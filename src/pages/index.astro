@@ -14,9 +14,17 @@
   <script>
     (function() {
       var lang = navigator.language || navigator.userLanguage || '';
-      var supported = ['zh', 'en', 'ja', 'ko', 'hi', 'es', 'fr', 'ar'];
-      var base = lang.toLowerCase().split('-')[0];
-      var target = supported.indexOf(base) >= 0 ? '/' + base + '/' : '/zh/';
+      var supported = ['zh', 'zh-cn', 'en', 'ja', 'ko', 'hi', 'es', 'fr', 'ar'];
+      var normalized = lang.toLowerCase();
+      var base = normalized.split('-')[0];
+      var target = '/zh/';
+      if (normalized === 'zh-cn' || normalized === 'zh-sg' || normalized === 'zh-hans') {
+        target = '/zh-cn/';
+      } else if (supported.indexOf(normalized) >= 0) {
+        target = '/' + normalized + '/';
+      } else if (supported.indexOf(base) >= 0) {
+        target = '/' + base + '/';
+      }
       window.location.replace(target);
     })();
   </script>

@@ -17,23 +17,23 @@ const product = products.find(p => p.slug === 'education')!;
 const features = [
   {
     icon: '🎓',
-    title: { zh: '即時課堂', en: 'Live Classrooms', ja: 'ライブクラス', ko: '실시간 교실', hi: 'लाइव कक्षाएं', es: 'Aulas en vivo', fr: 'Classes en direct', ar: 'فصول مباشرة' },
-    description: { zh: 'WebRTC 驅動的即時語言課堂，高清音視頻、互動白板、沉浸式學習。', en: 'WebRTC-powered live classrooms with HD audio/video and interactive whiteboard.', ja: 'WebRTC によるライブ語学クラス、HD 音声/映像、インタラクティブホワイトボードを提供します。', ko: 'WebRTC 기반 실시간 언어 수업, HD 오디오/비디오, 인터랙티브 화이트보드를 제공합니다.', hi: 'WebRTC आधारित लाइव भाषा कक्षाएं, HD ऑडियो/वीडियो और इंटरैक्टिव व्हाइटबोर्ड।', es: 'Aulas de idiomas en vivo con WebRTC, audio/video HD y pizarra interactiva.', fr: 'Classes de langues en direct via WebRTC avec audio/vidéo HD et tableau interactif.', ar: 'فصول لغة مباشرة عبر WebRTC مع صوت/فيديو عالي الدقة ولوح تفاعلي.' },
+    title: { zh: '即時課堂', 'zh-cn': '实时课堂', en: 'Live Classrooms', ja: 'ライブクラス', ko: '실시간 교실', hi: 'लाइव कक्षाएं', es: 'Aulas en vivo', fr: 'Classes en direct', ar: 'فصول مباشرة' },
+    description: { zh: 'WebRTC 驅動的即時語言課堂，高清音視頻、互動白板、沉浸式學習。', 'zh-cn': 'WebRTC 驱动的实时语言课堂，高清音视频、互动白板、沉浸式学习。', en: 'WebRTC-powered live classrooms with HD audio/video and interactive whiteboard.', ja: 'WebRTC によるライブ語学クラス、HD 音声/映像、インタラクティブホワイトボードを提供します。', ko: 'WebRTC 기반 실시간 언어 수업, HD 오디오/비디오, 인터랙티브 화이트보드를 제공합니다.', hi: 'WebRTC आधारित लाइव भाषा कक्षाएं, HD ऑडियो/वीडियो और इंटरैक्टिव व्हाइटबोर्ड।', es: 'Aulas de idiomas en vivo con WebRTC, audio/video HD y pizarra interactiva.', fr: 'Classes de langues en direct via WebRTC avec audio/vidéo HD et tableau interactif.', ar: 'فصول لغة مباشرة عبر WebRTC مع صوت/فيديو عالي الدقة ولوح تفاعلي.' },
   },
   {
     icon: '🏆',
-    title: { zh: '積分激勵', en: 'Points Incentive', ja: 'ポイントインセンティブ', ko: '포인트 보상', hi: 'पॉइंट प्रोत्साहन', es: 'Incentivos por puntos', fr: 'Incitation par points', ar: 'حوافز بالنقاط' },
-    description: { zh: '學習賺取積分，鏈上記錄學習成果，NFT 證書認證。', en: 'Earn points through learning, on-chain achievement records, NFT certificates.', ja: '学習でポイントを獲得し、成果をオンチェーンに記録し、NFT 証明書を受け取れます。', ko: '학습으로 포인트를 얻고 성과를 온체인에 기록하며 NFT 인증서를 발급합니다.', hi: 'सीखकर पॉइंट कमाएं, उपलब्धियां ऑन-चेन दर्ज करें और NFT प्रमाणपत्र पाएं।', es: 'Gana puntos aprendiendo, registra logros on-chain y recibe certificados NFT.', fr: 'Gagnez des points, enregistrez vos progrès on-chain et obtenez des certificats NFT.', ar: 'اكسب نقاطًا عبر التعلم وسجّل الإنجازات على السلسلة واحصل على شهادات NFT.' },
+    title: { zh: '積分激勵', 'zh-cn': '积分激励', en: 'Points Incentive', ja: 'ポイントインセンティブ', ko: '포인트 보상', hi: 'पॉइंट प्रोत्साहन', es: 'Incentivos por puntos', fr: 'Incitation par points', ar: 'حوافز بالنقاط' },
+    description: { zh: '學習賺取積分，鏈上記錄學習成果，NFT 證書認證。', 'zh-cn': '学习赚取积分，链上记录学习成果，NFT 证书认证。', en: 'Earn points through learning, on-chain achievement records, NFT certificates.', ja: '学習でポイントを獲得し、成果をオンチェーンに記録し、NFT 証明書を受け取れます。', ko: '학습으로 포인트를 얻고 성과를 온체인에 기록하며 NFT 인증서를 발급합니다.', hi: 'सीखकर पॉइंट कमाएं, उपलब्धियां ऑन-चेन दर्ज करें और NFT प्रमाणपत्र पाएं।', es: 'Gana puntos aprendiendo, registra logros on-chain y recibe certificados NFT.', fr: 'Gagnez des points, enregistrez vos progrès on-chain et obtenez des certificats NFT.', ar: 'اكسب نقاطًا عبر التعلم وسجّل الإنجازات على السلسلة واحصل على شهادات NFT.' },
   },
   {
     icon: '👥',
-    title: { zh: '語言交換', en: 'Language Exchange', ja: '言語交換', ko: '언어 교환', hi: 'भाषा विनिमय', es: 'Intercambio de idiomas', fr: 'Échange linguistique', ar: 'تبادل اللغات' },
-    description: { zh: '與母語者 1 對 1 語言交換練習，AI 輔助糾錯和翻譯。', en: '1-on-1 language exchange with native speakers, AI-assisted corrections.', ja: 'ネイティブスピーカーとの 1 対 1 言語交換を、AI による訂正で支援します。', ko: '원어민과 1:1 언어 교환을 하고 AI가 교정과 번역을 돕습니다.', hi: 'मूल वक्ताओं के साथ 1-से-1 भाषा अभ्यास और AI-सहायता सुधार।', es: 'Intercambio 1 a 1 con hablantes nativos y correcciones asistidas por IA.', fr: 'Échange 1:1 avec des natifs et corrections assistées par IA.', ar: 'تبادل لغة فردي مع متحدثين أصليين وتصحيح بمساعدة الذكاء الاصطناعي.' },
+    title: { zh: '語言交換', 'zh-cn': '语言交换', en: 'Language Exchange', ja: '言語交換', ko: '언어 교환', hi: 'भाषा विनिमय', es: 'Intercambio de idiomas', fr: 'Échange linguistique', ar: 'تبادل اللغات' },
+    description: { zh: '與母語者 1 對 1 語言交換練習，AI 輔助糾錯和翻譯。', 'zh-cn': '与母语者 1 对 1 语言交换练习，AI 辅助纠错和翻译。', en: '1-on-1 language exchange with native speakers, AI-assisted corrections.', ja: 'ネイティブスピーカーとの 1 対 1 言語交換を、AI による訂正で支援します。', ko: '원어민과 1:1 언어 교환을 하고 AI가 교정과 번역을 돕습니다.', hi: 'मूल वक्ताओं के साथ 1-से-1 भाषा अभ्यास और AI-सहायता सुधार।', es: 'Intercambio 1 a 1 con hablantes nativos y correcciones asistidas por IA.', fr: 'Échange 1:1 avec des natifs et corrections assistées par IA.', ar: 'تبادل لغة فردي مع متحدثين أصليين وتصحيح بمساعدة الذكاء الاصطناعي.' },
   },
   {
     icon: '📊',
-    title: { zh: '學習追蹤', en: 'Learning Tracking', ja: '学習トラッキング', ko: '학습 추적', hi: 'लर्निंग ट्रैकिंग', es: 'Seguimiento del aprendizaje', fr: 'Suivi d’apprentissage', ar: 'تتبع التعلم' },
-    description: { zh: '全面的學習資料儀表板、進度追蹤、個人化學習路徑推薦。', en: 'Comprehensive dashboard with progress tracking and personalized learning paths.', ja: '進捗管理とパーソナライズされた学習パスを備えた総合ダッシュボード。', ko: '학습 데이터 대시보드, 진도 추적, 개인화 학습 경로 추천을 제공합니다.', hi: 'प्रगति ट्रैकिंग और व्यक्तिगत सीखने के मार्गों वाला व्यापक डैशबोर्ड।', es: 'Panel completo con seguimiento de progreso y rutas de aprendizaje personalizadas.', fr: 'Tableau de bord complet avec suivi des progrès et parcours personnalisés.', ar: 'لوحة تعلم شاملة مع تتبع التقدم ومسارات تعلم مخصصة.' },
+    title: { zh: '學習追蹤', 'zh-cn': '学习追踪', en: 'Learning Tracking', ja: '学習トラッキング', ko: '학습 추적', hi: 'लर्निंग ट्रैकिंग', es: 'Seguimiento del aprendizaje', fr: 'Suivi d’apprentissage', ar: 'تتبع التعلم' },
+    description: { zh: '全面的學習資料儀表板、進度追蹤、個人化學習路徑推薦。', 'zh-cn': '全面的学习数据仪表板、进度追踪、个人化学习路径推荐。', en: 'Comprehensive dashboard with progress tracking and personalized learning paths.', ja: '進捗管理とパーソナライズされた学習パスを備えた総合ダッシュボード。', ko: '학습 데이터 대시보드, 진도 추적, 개인화 학습 경로 추천을 제공합니다.', hi: 'प्रगति ट्रैकिंग और व्यक्तिगत सीखने के मार्गों वाला व्यापक डैशबोर्ड।', es: 'Panel completo con seguimiento de progreso y rutas de aprendizaje personalizadas.', fr: 'Tableau de bord complet avec suivi des progrès et parcours personnalisés.', ar: 'لوحة تعلم شاملة مع تتبع التقدم ومسارات تعلم مخصصة.' },
   },
 ];
 ---

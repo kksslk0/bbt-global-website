@@ -20,6 +20,7 @@ export const products: ProductDownload[] = [
     slug: 'translator',
     name: {
       zh: 'BBT 翻譯器',
+      'zh-cn': 'BBT 翻译器',
       en: 'BBT Translator',
       ja: 'BBT 翻訳ツール',
       ko: 'BBT 번역기',
@@ -30,6 +31,7 @@ export const products: ProductDownload[] = [
     },
     description: {
       zh: 'AI 驅動的多語言即時翻譯工具，支援文字、語音和文件翻譯。',
+      'zh-cn': 'AI 驱动的多语言实时翻译工具，支持文字、语音和文件翻译。',
       en: 'AI-powered multilingual real-time translation tool with text, voice, and document support.',
       ja: 'テキスト、音声、ドキュメント翻訳に対応した AI 駆動の多言語リアルタイム翻訳ツール。',
       ko: '텍스트, 음성, 문서 번역을 지원하는 AI 기반 다국어 실시간 번역 도구.',
@@ -45,6 +47,7 @@ export const products: ProductDownload[] = [
     version: null,
     actionLabel: {
       zh: 'App Store 下載',
+      'zh-cn': 'App Store 下载',
       en: 'Download on App Store',
       ja: 'App Store でダウンロード',
       ko: 'App Store에서 다운로드',
@@ -55,6 +58,7 @@ export const products: ProductDownload[] = [
     },
     actionHint: {
       zh: '點擊下方按鈕前往 App Store 下載 BBT 翻譯器。',
+      'zh-cn': '点击下方按钮前往 App Store 下载 BBT 翻译器。',
       en: 'Click below to download BBT Translator from the App Store.',
       ja: '下のボタンから App Store で BBT 翻訳ツールをダウンロードできます。',
       ko: '아래 버튼을 눌러 App Store에서 BBT 번역기를 다운로드하세요.',
@@ -68,6 +72,7 @@ export const products: ProductDownload[] = [
     slug: 'social',
     name: {
       zh: 'BBT 社交',
+      'zh-cn': 'BBT 社交',
       en: 'BBT Social',
       ja: 'BBT ソーシャル',
       ko: 'BBT 소셜',
@@ -78,6 +83,7 @@ export const products: ProductDownload[] = [
     },
     description: {
       zh: 'Web3 錢包原生即時通訊平台，萬人社群、代幣門控、鏈上身份。',
+      'zh-cn': 'Web3 钱包原生实时通讯平台，万人社区、代币门控、链上身份。',
       en: 'Web3 wallet-native IM platform with massive communities, token-gated channels, and on-chain identity.',
       ja: '大規模コミュニティ、トークンゲートチャンネル、オンチェーン ID を備えた Web3 ウォレットネイティブのメッセージング基盤。',
       ko: '대규모 커뮤니티, 토큰 게이트 채널, 온체인 신원을 갖춘 Web3 지갑 네이티브 메신저 플랫폼.',
@@ -93,6 +99,7 @@ export const products: ProductDownload[] = [
     version: null,
     actionHint: {
       zh: '跨語言社交網路正在內測打磨中，開放後會第一時間提供下載入口。',
+      'zh-cn': '跨语言社交网络正在内测打磨中，开放后会第一时间提供下载入口。',
       en: 'The cross-language social network is being refined in private testing. The download link will be released as soon as it is ready.',
       ja: 'クロスランゲージ・ソーシャルネットワークは現在クローズドテスト中です。準備が整い次第、ダウンロードリンクを公開します。',
       ko: '크로스 언어 소셜 네트워크는 비공개 테스트에서 다듬고 있습니다. 준비되는 즉시 다운로드 링크를 공개하겠습니다.',
@@ -106,6 +113,7 @@ export const products: ProductDownload[] = [
     slug: 'education',
     name: {
       zh: 'BBT 教育',
+      'zh-cn': 'BBT 教育',
       en: 'BBT Education',
       ja: 'BBT 教育',
       ko: 'BBT 교육',
@@ -116,6 +124,7 @@ export const products: ProductDownload[] = [
     },
     description: {
       zh: 'WebRTC 即時語言課堂、積分激勵體系、NFT 學習證書。',
+      'zh-cn': 'WebRTC 实时语言课堂、积分激励体系、NFT 学习证书。',
       en: 'WebRTC live language classrooms with points-based incentive system and NFT learning certificates.',
       ja: 'WebRTC ライブ語学クラス、ポイント型インセンティブ、NFT 学習証明書。',
       ko: 'WebRTC 실시간 언어 교실, 포인트 기반 보상 시스템, NFT 학습 인증서.',
@@ -131,6 +140,7 @@ export const products: ProductDownload[] = [
     version: null,
     actionLabel: {
       zh: '開啟演示',
+      'zh-cn': '开启演示',
       en: 'Open Demo',
       ja: 'デモを開く',
       ko: '데모 열기',
@@ -141,6 +151,7 @@ export const products: ProductDownload[] = [
     },
     actionHint: {
       zh: '點擊下方按鈕進入 BBT 教育演示站。',
+      'zh-cn': '点击下方按钮进入 BBT 教育演示站。',
       en: 'Click below to open the BBT Education demo.',
       ja: '下のボタンから BBT 教育デモサイトを開けます。',
       ko: '아래 버튼을 눌러 BBT 교육 데모를 여세요.',

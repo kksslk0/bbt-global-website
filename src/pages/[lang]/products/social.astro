@@ -17,23 +17,23 @@ const product = products.find(p => p.slug === 'social')!;
 const features = [
   {
     icon: '💬',
-    title: { zh: '即時通訊', en: 'Instant Messaging', ja: 'インスタントメッセージ', ko: '실시간 메시징', hi: 'इंस्टेंट मैसेजिंग', es: 'Mensajería instantánea', fr: 'Messagerie instantanée', ar: 'المراسلة الفورية' },
-    description: { zh: '私聊、群聊、社群頻道，訊息即時同步，支援已讀狀態與推播通知。', en: 'Private chat, group chat, and community channels with real-time sync and push notifications.', ja: 'プライベートチャット、グループチャット、コミュニティチャンネルをリアルタイム同期と通知で提供します。', ko: '개인 채팅, 그룹 채팅, 커뮤니티 채널을 실시간 동기화와 알림으로 제공합니다.', hi: 'निजी चैट, समूह चैट और समुदाय चैनल रीयल-टाइम सिंक व नोटिफिकेशन के साथ।', es: 'Chats privados, grupos y canales comunitarios con sincronización en tiempo real y notificaciones.', fr: 'Chats privés, groupes et canaux communautaires avec synchronisation temps réel et notifications.', ar: 'دردشات خاصة وجماعية وقنوات مجتمع مع مزامنة فورية وإشعارات.' },
+    title: { zh: '即時通訊', 'zh-cn': '实时通讯', en: 'Instant Messaging', ja: 'インスタントメッセージ', ko: '실시간 메시징', hi: 'इंस्टेंट मैसेजिंग', es: 'Mensajería instantánea', fr: 'Messagerie instantanée', ar: 'المراسلة الفورية' },
+    description: { zh: '私聊、群聊、社群頻道，訊息即時同步，支援已讀狀態與推播通知。', 'zh-cn': '私聊、群聊、社区频道，消息实时同步，支持已读状态与推播通知。', en: 'Private chat, group chat, and community channels with real-time sync and push notifications.', ja: 'プライベートチャット、グループチャット、コミュニティチャンネルをリアルタイム同期と通知で提供します。', ko: '개인 채팅, 그룹 채팅, 커뮤니티 채널을 실시간 동기화와 알림으로 제공합니다.', hi: 'निजी चैट, समूह चैट और समुदाय चैनल रीयल-टाइम सिंक व नोटिफिकेशन के साथ।', es: 'Chats privados, grupos y canales comunitarios con sincronización en tiempo real y notificaciones.', fr: 'Chats privés, groupes et canaux communautaires avec synchronisation temps réel et notifications.', ar: 'دردشات خاصة وجماعية وقنوات مجتمع مع مزامنة فورية وإشعارات.' },
   },
   {
     icon: '🏛️',
-    title: { zh: '超級社群', en: 'Super Communities', ja: 'スーパーコミュニティ', ko: '슈퍼 커뮤니티', hi: 'सुपर समुदाय', es: 'Supercomunidades', fr: 'Super communautés', ar: 'مجتمعات كبرى' },
-    description: { zh: '萬人社群架構，頻道管理、角色系統、成員管理一氣呵成。', en: 'Massive community architecture with channels, roles, and member management.', ja: '大規模コミュニティ向けに、チャンネル、ロール、メンバー管理を一体化します。', ko: '대규모 커뮤니티 구조와 채널, 역할, 멤버 관리를 한곳에서 운영합니다.', hi: 'चैनल, भूमिकाओं और सदस्य प्रबंधन के साथ बड़े समुदायों की संरचना।', es: 'Arquitectura para grandes comunidades con canales, roles y gestión de miembros.', fr: 'Architecture pour grandes communautés avec canaux, rôles et gestion des membres.', ar: 'بنية للمجتمعات الكبيرة مع إدارة القنوات والأدوار والأعضاء.' },
+    title: { zh: '超級社群', 'zh-cn': '超级社区', en: 'Super Communities', ja: 'スーパーコミュニティ', ko: '슈퍼 커뮤니티', hi: 'सुपर समुदाय', es: 'Supercomunidades', fr: 'Super communautés', ar: 'مجتمعات كبرى' },
+    description: { zh: '萬人社群架構，頻道管理、角色系統、成員管理一氣呵成。', 'zh-cn': '万人社区架构，频道管理、角色系统、成员管理一气呵成。', en: 'Massive community architecture with channels, roles, and member management.', ja: '大規模コミュニティ向けに、チャンネル、ロール、メンバー管理を一体化します。', ko: '대규모 커뮤니티 구조와 채널, 역할, 멤버 관리를 한곳에서 운영합니다.', hi: 'चैनल, भूमिकाओं और सदस्य प्रबंधन के साथ बड़े समुदायों की संरचना।', es: 'Arquitectura para grandes comunidades con canales, roles y gestión de miembros.', fr: 'Architecture pour grandes communautés avec canaux, rôles et gestion des membres.', ar: 'بنية للمجتمعات الكبيرة مع إدارة القنوات والأدوار والأعضاء.' },
   },
   {
     icon: '🔐',
-    title: { zh: '代幣門控', en: 'Token Gating', ja: 'トークンゲート', ko: '토큰 게이팅', hi: 'टोकन गेटिंग', es: 'Acceso por token', fr: 'Accès par token', ar: 'بوابات الرموز' },
-    description: { zh: 'NFT 和代幣門控頻道，鏈上身份驗證，角色權限系統。', en: 'NFT and token-gated channels with on-chain identity verification.', ja: 'NFT とトークンゲートチャンネル、オンチェーン ID 検証、ロール権限をサポートします。', ko: 'NFT 및 토큰 기반 채널, 온체인 신원 확인, 역할 권한 시스템을 지원합니다.', hi: 'NFT और token-gated चैनल, ऑन-चेन पहचान सत्यापन और भूमिका अनुमतियां।', es: 'Canales con NFT y tokens, verificación on-chain e permisos por rol.', fr: 'Canaux NFT et token-gated avec vérification on-chain et permissions par rôle.', ar: 'قنوات مقيدة بـ NFT والرموز مع تحقق هوية وصلاحيات أدوار على السلسلة.' },
+    title: { zh: '代幣門控', 'zh-cn': '代币门控', en: 'Token Gating', ja: 'トークンゲート', ko: '토큰 게이팅', hi: 'टोकन गेटिंग', es: 'Acceso por token', fr: 'Accès par token', ar: 'بوابات الرموز' },
+    description: { zh: 'NFT 和代幣門控頻道，鏈上身份驗證，角色權限系統。', 'zh-cn': 'NFT 和代币门控频道，链上身份验证，角色权限系统。', en: 'NFT and token-gated channels with on-chain identity verification.', ja: 'NFT とトークンゲートチャンネル、オンチェーン ID 検証、ロール権限をサポートします。', ko: 'NFT 및 토큰 기반 채널, 온체인 신원 확인, 역할 권한 시스템을 지원합니다.', hi: 'NFT और token-gated चैनल, ऑन-चेन पहचान सत्यापन और भूमिका अनुमतियां।', es: 'Canales con NFT y tokens, verificación on-chain e permisos por rol.', fr: 'Canaux NFT et token-gated avec vérification on-chain et permissions par rôle.', ar: 'قنوات مقيدة بـ NFT والرموز مع تحقق هوية وصلاحيات أدوار على السلسلة.' },
   },
   {
     icon: '🤖',
-    title: { zh: 'AI 摘要', en: 'AI Summarization', ja: 'AI 要約', ko: 'AI 요약', hi: 'AI सारांश', es: 'Resumen con IA', fr: 'Résumé IA', ar: 'تلخيص بالذكاء الاصطناعي' },
-    description: { zh: '頻道內容自動摘要，關鍵話題提取，代幣和連結智慧辨識。', en: 'Auto-summarization of channel content with topic and token extraction.', ja: 'チャンネル内容を自動要約し、重要トピック、トークン、リンクを認識します。', ko: '채널 내용을 자동 요약하고 주요 주제, 토큰, 링크를 인식합니다.', hi: 'चैनल सामग्री का ऑटो-सारांश, विषय और टोकन पहचान के साथ।', es: 'Resumen automático de canales con extracción de temas, tokens y enlaces.', fr: 'Résumé automatique des canaux avec extraction de sujets, tokens et liens.', ar: 'تلخيص تلقائي لمحتوى القنوات مع استخراج المواضيع والرموز والروابط.' },
+    title: { zh: 'AI 摘要', 'zh-cn': 'AI 摘要', en: 'AI Summarization', ja: 'AI 要約', ko: 'AI 요약', hi: 'AI सारांश', es: 'Resumen con IA', fr: 'Résumé IA', ar: 'تلخيص بالذكاء الاصطناعي' },
+    description: { zh: '頻道內容自動摘要，關鍵話題提取，代幣和連結智慧辨識。', 'zh-cn': '频道内容自动摘要，关键话题提取，代币和连结智慧识别。', en: 'Auto-summarization of channel content with topic and token extraction.', ja: 'チャンネル内容を自動要約し、重要トピック、トークン、リンクを認識します。', ko: '채널 내용을 자동 요약하고 주요 주제, 토큰, 링크를 인식합니다.', hi: 'चैनल सामग्री का ऑटो-सारांश, विषय और टोकन पहचान के साथ।', es: 'Resumen automático de canales con extracción de temas, tokens y enlaces.', fr: 'Résumé automatique des canaux avec extraction de sujets, tokens et liens.', ar: 'تلخيص تلقائي لمحتوى القنوات مع استخراج المواضيع والرموز والروابط.' },
   },
 ];
 ---
