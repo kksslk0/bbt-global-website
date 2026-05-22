@@ -115,28 +115,28 @@ export const whitepaperLocales = {
 
 const sectionTitles = {
   zh: [
-    '願景：語言作為全球協作協議', '全球語言摩擦', 'LanguageFi：AI 時代的新協作範式', '協議總覽', '協議架構', 'AI 語言基礎設施', '即時翻譯協作層', '跨語言社交層', '全球語言教育協作層', '全球創作者引擎', '語言關係圖譜', '語言信譽系統', '全球協作身份體系', 'BBT 協調經濟', '協議資源模型', '協議消耗機制', '治理框架', '隱私與安全', '生態飛輪', '商業模型', '發展路線圖', '合規框架', '長期願景',
+    '願景：語言作為全球協作協議', '全球語言摩擦', 'LanguageFi：AI 時代的新協作範式', '協議總覽', '協議架構', 'AI 語言基礎設施', '即時翻譯協作層', '跨語言社交層', '全球語言教育協作層', '全球創作者引擎', '語言關係圖譜', '語言信譽系統', '全球協作身份體系', '協議資源協調', '治理框架', '隱私與安全', '生態飛輪', '商業模型', '發展路線圖', '合規框架', '長期願景',
   ],
   en: [
-    'Vision: Language as a Global Collaboration Protocol', 'The Global Language Problem', 'LanguageFi: A New AI-Era Collaboration Paradigm', 'Protocol Overview', 'Protocol Architecture', 'AI Language Infrastructure', 'Translation Layer', 'Social Layer', 'Education Layer', 'Creator Economy Engine', 'Language Graph', 'Language Reputation System', 'Global Coordination Identity', 'BBT Coordination Economy', 'Protocol Resource Model', 'Protocol Sink Mechanism', 'Governance Framework', 'Privacy & Security', 'Ecosystem Flywheel', 'Business Model', 'Roadmap', 'Compliance Framework', 'Long-Term Vision',
+    'Vision: Language as a Global Collaboration Protocol', 'The Global Language Problem', 'LanguageFi: A New AI-Era Collaboration Paradigm', 'Protocol Overview', 'Protocol Architecture', 'AI Language Infrastructure', 'Translation Layer', 'Social Layer', 'Education Layer', 'Creator Economy Engine', 'Language Graph', 'Language Reputation System', 'Global Coordination Identity', 'Protocol Resource Coordination', 'Governance Framework', 'Privacy & Security', 'Ecosystem Flywheel', 'Business Model', 'Roadmap', 'Compliance Framework', 'Long-Term Vision',
   ],
   ja: [
-    'ビジョン：グローバル協働プロトコルとしての言語', 'グローバルな言語摩擦', 'LanguageFi：AI 時代の新しい協働パラダイム', 'プロトコル概要', 'プロトコルアーキテクチャ', 'AI 言語インフラ', 'リアルタイム翻訳協働レイヤー', 'クロスランゲージ・ソーシャルレイヤー', 'グローバル語学教育協働レイヤー', 'グローバル Creator エンジン', 'Language Graph', 'Language Reputation System', 'Global Coordination Identity', 'BBT Coordination Economy', 'Protocol Resource Model', 'Protocol Sink Mechanism', 'Governance Framework', 'Privacy & Security', 'Ecosystem Flywheel', 'Business Model', 'Roadmap', 'Compliance Framework', 'Long-Term Vision',
+    'ビジョン：グローバル協働プロトコルとしての言語', 'グローバルな言語摩擦', 'LanguageFi：AI 時代の新しい協働パラダイム', 'プロトコル概要', 'プロトコルアーキテクチャ', 'AI 言語インフラ', 'リアルタイム翻訳協働レイヤー', 'クロスランゲージ・ソーシャルレイヤー', 'グローバル語学教育協働レイヤー', 'グローバル Creator エンジン', 'Language Graph', 'Language Reputation System', 'Global Coordination Identity', 'プロトコルリソース調整', 'Governance Framework', 'Privacy & Security', 'Ecosystem Flywheel', 'Business Model', 'Roadmap', 'Compliance Framework', 'Long-Term Vision',
   ],
   ko: [
-    '비전: 글로벌 협업 프로토콜로서의 언어', '글로벌 언어 마찰', 'LanguageFi: AI 시대의 협업 패러다임', '프로토콜 개요', '프로토콜 아키텍처', 'AI 언어 인프라', '번역 레이어', '소셜 레이어', '교육 레이어', '크리에이터 경제 엔진', '언어 그래프', '언어 평판 시스템', '글로벌 협업 정체성', 'BBT 조정 경제', '프로토콜 리소스 모델', '프로토콜 소비 메커니즘', '거버넌스 프레임워크', '개인정보와 보안', '생태계 플라이휠', '비즈니스 모델', '로드맵', '컴플라이언스 프레임워크', '장기 비전',
+    '비전: 글로벌 협업 프로토콜로서의 언어', '글로벌 언어 마찰', 'LanguageFi: AI 시대의 협업 패러다임', '프로토콜 개요', '프로토콜 아키텍처', 'AI 언어 인프라', '번역 레이어', '소셜 레이어', '교육 레이어', '크리에이터 경제 엔진', '언어 그래프', '언어 평판 시스템', '글로벌 협업 정체성', '프로토콜 리소스 조정', '거버넌스 프레임워크', '개인정보와 보안', '생태계 플라이휠', '비즈니스 모델', '로드맵', '컴플라이언스 프레임워크', '장기 비전',
   ],
   hi: [
-    'दृष्टि: वैश्विक सहयोग प्रोटोकॉल के रूप में भाषा', 'वैश्विक भाषा समस्या', 'LanguageFi: AI युग का नया सहयोग मॉडल', 'प्रोटोकॉल अवलोकन', 'प्रोटोकॉल आर्किटेक्चर', 'AI भाषा अवसंरचना', 'अनुवाद लेयर', 'सोशल लेयर', 'शिक्षा लेयर', 'क्रिएटर इकॉनमी इंजन', 'Language Graph', 'Language Reputation System', 'Global Coordination Identity', 'BBT Coordination Economy', 'Protocol Resource Model', 'Protocol Sink Mechanism', 'Governance Framework', 'Privacy & Security', 'Ecosystem Flywheel', 'Business Model', 'Roadmap', 'Compliance Framework', 'Long-Term Vision',
+    'दृष्टि: वैश्विक सहयोग प्रोटोकॉल के रूप में भाषा', 'वैश्विक भाषा समस्या', 'LanguageFi: AI युग का नया सहयोग मॉडल', 'प्रोटोकॉल अवलोकन', 'प्रोटोकॉल आर्किटेक्चर', 'AI भाषा अवसंरचना', 'अनुवाद लेयर', 'सोशल लेयर', 'शिक्षा लेयर', 'क्रिएटर इकॉनमी इंजन', 'Language Graph', 'Language Reputation System', 'Global Coordination Identity', 'Protocol Resource Coordination', 'Governance Framework', 'Privacy & Security', 'Ecosystem Flywheel', 'Business Model', 'Roadmap', 'Compliance Framework', 'Long-Term Vision',
   ],
   es: [
-    'Visión: el lenguaje como protocolo global de colaboración', 'El problema global del lenguaje', 'LanguageFi: nuevo paradigma de colaboración en la era de IA', 'Resumen del protocolo', 'Arquitectura del protocolo', 'Infraestructura lingüística de IA', 'Capa de traducción', 'Capa social', 'Capa educativa', 'Motor de creator economy', 'Language Graph', 'Sistema de reputación lingüística', 'Identidad global de coordinación', 'Economía de coordinación BBT', 'Modelo de recursos del protocolo', 'Mecanismo de consumo del protocolo', 'Marco de gobernanza', 'Privacidad y seguridad', 'Volante del ecosistema', 'Modelo de negocio', 'Hoja de ruta', 'Marco de cumplimiento', 'Visión a largo plazo',
+    'Visión: el lenguaje como protocolo global de colaboración', 'El problema global del lenguaje', 'LanguageFi: nuevo paradigma de colaboración en la era de IA', 'Resumen del protocolo', 'Arquitectura del protocolo', 'Infraestructura lingüística de IA', 'Capa de traducción', 'Capa social', 'Capa educativa', 'Motor de creator economy', 'Language Graph', 'Sistema de reputación lingüística', 'Identidad global de coordinación', 'Coordinación de recursos del protocolo', 'Marco de gobernanza', 'Privacidad y seguridad', 'Volante del ecosistema', 'Modelo de negocio', 'Hoja de ruta', 'Marco de cumplimiento', 'Visión a largo plazo',
   ],
   fr: [
-    'Vision : le langage comme protocole mondial de collaboration', 'Le problème mondial du langage', 'LanguageFi : nouveau paradigme de collaboration à l’ère de l’IA', 'Vue d’ensemble du protocole', 'Architecture du protocole', 'Infrastructure linguistique IA', 'Couche de traduction', 'Couche sociale', 'Couche éducation', 'Moteur creator economy', 'Language Graph', 'Système de réputation linguistique', 'Identité mondiale de coordination', 'Économie de coordination BBT', 'Modèle de ressources du protocole', 'Mécanisme de consommation du protocole', 'Cadre de gouvernance', 'Confidentialité et sécurité', 'Flywheel de l’écosystème', 'Modèle économique', 'Feuille de route', 'Cadre de conformité', 'Vision long terme',
+    'Vision : le langage comme protocole mondial de collaboration', 'Le problème mondial du langage', 'LanguageFi : nouveau paradigme de collaboration à l’ère de l’IA', 'Vue d’ensemble du protocole', 'Architecture du protocole', 'Infrastructure linguistique IA', 'Couche de traduction', 'Couche sociale', 'Couche éducation', 'Moteur creator economy', 'Language Graph', 'Système de réputation linguistique', 'Identité mondiale de coordination', 'Coordination des ressources du protocole', 'Cadre de gouvernance', 'Confidentialité et sécurité', 'Flywheel de l’écosystème', 'Modèle économique', 'Feuille de route', 'Cadre de conformité', 'Vision long terme',
   ],
   ar: [
-    'الرؤية: اللغة كبروتوكول تعاون عالمي', 'مشكلة اللغة العالمية', 'LanguageFi: نموذج تعاون جديد في عصر الذكاء الاصطناعي', 'نظرة عامة على البروتوكول', 'معمارية البروتوكول', 'بنية اللغة المدعومة بالذكاء الاصطناعي', 'طبقة الترجمة', 'الطبقة الاجتماعية', 'طبقة التعليم', 'محرك اقتصاد المبدعين', 'مخطط اللغة', 'نظام سمعة اللغة', 'هوية التنسيق العالمية', 'اقتصاد تنسيق BBT', 'نموذج موارد البروتوكول', 'آلية استهلاك البروتوكول', 'إطار الحوكمة', 'الخصوصية والأمان', 'دولاب نمو النظام البيئي', 'نموذج الأعمال', 'خارطة الطريق', 'إطار الامتثال', 'الرؤية طويلة الأجل',
+    'الرؤية: اللغة كبروتوكول تعاون عالمي', 'مشكلة اللغة العالمية', 'LanguageFi: نموذج تعاون جديد في عصر الذكاء الاصطناعي', 'نظرة عامة على البروتوكول', 'معمارية البروتوكول', 'بنية اللغة المدعومة بالذكاء الاصطناعي', 'طبقة الترجمة', 'الطبقة الاجتماعية', 'طبقة التعليم', 'محرك اقتصاد المبدعين', 'مخطط اللغة', 'نظام سمعة اللغة', 'هوية التنسيق العالمية', 'تنسيق موارد البروتوكول', 'إطار الحوكمة', 'الخصوصية والأمان', 'دولاب نمو النظام البيئي', 'نموذج الأعمال', 'خارطة الطريق', 'إطار الامتثال', 'الرؤية طويلة الأجل',
   ],
 };
 
@@ -144,7 +144,7 @@ const zhBodies = [
   ['語言是人類最早也最持久的協作協議。BBT 的使命不是再做一個翻譯工具或社交平台，而是構建 AI 原生的全球語言協作協議。', '協議將即時語言理解、多語言社交、教育協作、Creator Economy、去中心化身份和語言信譽系統結合起來，使不同語言、文化和國家的使用者能夠即時理解、連接、協作與共建。'],
   ['網際網路實现了資訊全球化，但協作仍被語言切割。跨語言社交、內容傳播、語言教育、跨境商業和文化理解都存在長期摩擦。', '真正的全球協作不只是字面翻譯，而是需要理解語氣、情緒、文化背景、社交關係和創作者風格的語言基礎設施。'],
   ['LanguageFi 不是简单的“語言 + 金融”，而是 AI 時代的全球語言協作網路。AI 讓即時理解成為可能，Web3 讓開放身份、信譽沉澱、資源協調和治理參與成為可能。', '其核心目標是降低全球協作成本，釋放新的 Global Language Collaboration Network。'],
-  ['BBT LanguageFi Protocol 由 Translation Layer、Social Layer、Education Layer、Creator Economy Engine、Language Graph、Language Reputation System、Global Coordination Identity、BBT Coordination Economy、Governance Framework 與開放協議基礎設施組成。'],
+  ['BBT LanguageFi Protocol 由 Translation Layer、Social Layer、Education Layer、Creator Economy Engine、Language Graph、Language Reputation System、Global Coordination Identity、Governance Framework 與開放協議基礎設施組成。'],
   ['協議分為使用者層、AI 協調層、語言圖譜層、協議層和基礎設施層。使用者透過翻譯、社交、教育、創作、企業 API 和開發者工具接入網路，並在長期互動中形成語言身份與協作信譽。'],
   ['AI 是協議的智慧引擎。BBT 支援文字翻譯、語音翻譯、字幕、多語言內容同步、語境理解、情緒辨識、教育回饋、Creator 全球分發和企業協作。', 'BBT 關注的不只是“說了什麼”，也關注“為什麼這樣說”和“怎樣表達更合適”。'],
   ['Translation Layer 是網路入口，覆蓋文字、語音、對話、群組、直播、字幕、社群內容和企業 API 翻譯。', '每一次翻譯、互動和學習都可以沉澱為 Language Graph 的一部分。'],
@@ -154,14 +154,12 @@ const zhBodies = [
   ['Language Graph 是協議的長期網路資產，由語言能力、翻譯貢獻、教育貢獻、社交信任、創作者影響力、文化貢獻、在地知識和全球協作行為構成。'],
   ['Language Reputation 反映使用者在語言能力、貢獻、社交可信度、文化理解和 Creator 影響力上的長期表現，可用於推薦、排序、身份等級、社群權限、治理參考和企業服務篩選。'],
   ['Global Coordination Identity 是使用者在 BBT 網路中的長期參與、貢獻、權限與協作身份。它不代表金融收益權，不承諾回報，也不構成證券權益。'],
-  ['BBT 是協議原生協調資產，用於協調 AI 資源、教育服務、Creator 網路、身份體系、治理參與和生態运行。BBT 不代表股權、債權、分紅權或固定收益憑證。'],
-  ['協議資源包括 AI 翻譯呼叫、語音翻譯、字幕、多語言同步、教育結算、Creator 工具、Reputation 啟用、治理參與、開放 API、企業服務與高級協作功能。'],
-  ['BBT 不採用買賣稅機制。長期消耗來自真實協議使用，例如高級翻譯、即時語音、Creator 同步、AI 字幕、教育服務、身份升級、DAO 提案、企業 API 和開發者介面。'],
+  ['BBT 可作為未來協議資源協調與生態治理的功能型組件，用於連接 AI 服務、教育協作、Creator 工具、開放 API 與社群治理等場景。', '具體機制將根據產品進展、使用者需求與不同司法轄區的合規要求另行公布。本公開白皮書不提供發行分配、流動性安排、收益預期或市場表現承諾。'],
   ['治理將逐步覆蓋協議參數、生態基金、Creator 激勵、教育市場規则、Reputation 規则、身份體系、API 開放、社群準則與全球合作提案。治理權重將探索 BBT、Reputation、身份和貢獻的多維模型。'],
   ['語言資料高度敏感。BBT 以資料最小化、權限控制、DID、使用者可控授權、加密通訊、AI 資料隔離、分散式儲存和企業級存取控制作為隱私與安全原則。'],
   ['更多使用者帶來更多跨語言交流，形成更多語言資料與協作行為，提升 AI 語境理解，增強翻譯、教育和社交體驗，吸引更多 Creator、教師、語伴、在地嚮導和開發者加入。'],
   ['商業模型來自真實語言協作需求，包括 AI 翻譯服務、教育市場、Creator 服務、企業 API、身份與 Reputation 服務、開發者工具和高級 AI 功能。'],
-  ['2026 年建設協議基礎與早期社群；2027 年擴展社交、教育和 Creator 網路；2028 年推進開放 API、SDK、DAO 與企業服務；2029 年及以後形成全球語言協作基礎設施。'],
+  ['2026 年建設協議基礎、核心產品與早期社群；2027 年擴展社交、教育和 Creator 網路；2028 年推進開放 API、SDK、DAO 與企業服務；2029 年及以後形成全球語言協作基礎設施。'],
   ['BBT 採用 Utility-first 設計，不以金融收益为核心，不承諾價格、收益、回報或市場表現，不代表股權、債權、分紅權或公司所有權，並將根據不同司法轄區持續完善合規框架。'],
   ['未來十年，網際網路將從資訊網際網路進入協作網際網路。BBT 的長期願景是構建全球語言協作網路，讓語言成為下一代網際網路的開放協議層。'],
 ];
@@ -170,7 +168,7 @@ const enBodies = [
   ['Language is humanity’s earliest and most durable collaboration protocol. BBT is not another translator or social app; it is an AI-native global language collaboration protocol.', 'It combines real-time understanding, multilingual social networks, education, creator markets, decentralized identity, and reputation into an open collaboration layer.'],
   ['The internet globalized information, but collaboration remains fragmented by language. Social relationships, content distribution, education, commerce, and culture all still carry language friction.', 'True collaboration requires context-aware infrastructure that understands tone, emotion, culture, relationships, and creator style.'],
   ['LanguageFi is not merely language plus finance. It is a global language collaboration network for the AI era. AI enables real-time understanding; Web3 enables open identity, reputation, resource coordination, and governance.', 'The goal is to reduce global collaboration cost and unlock a Global Language Collaboration Network.'],
-  ['The protocol consists of Translation Layer, Social Layer, Education Layer, Creator Economy Engine, Language Graph, Language Reputation System, Global Coordination Identity, BBT Coordination Economy, Governance Framework, and open protocol infrastructure.'],
+  ['The protocol consists of Translation Layer, Social Layer, Education Layer, Creator Economy Engine, Language Graph, Language Reputation System, Global Coordination Identity, Governance Framework, and open protocol infrastructure.'],
   ['The architecture includes User Layer, AI Coordination Layer, Language Graph Layer, Protocol Layer, and Infrastructure Layer. Users enter through translation, social, education, creator, enterprise API, and developer scenarios.'],
   ['AI is the intelligence engine of the protocol, powering text translation, voice translation, subtitles, multilingual sync, context understanding, emotion detection, education feedback, creator distribution, and enterprise collaboration.'],
   ['The Translation Layer is the entry point for text, voice, conversation, group, livestream, subtitle, community, and enterprise API translation. Each interaction may contribute to the Language Graph.'],
@@ -180,14 +178,12 @@ const enBodies = [
   ['Language Graph is the protocol’s long-term network asset, shaped by language ability, translation contribution, education contribution, social trust, creator influence, cultural contribution, local knowledge, and collaboration behavior.'],
   ['Language Reputation represents long-term ability, contribution, social trust, cultural understanding, and creator influence. It can support matching, ranking, permissions, governance references, and enterprise service selection.'],
   ['Global Coordination Identity expresses participation, contribution, permission, and collaboration identity in the BBT network. It does not represent financial rights, guaranteed returns, or securities interests.'],
-  ['BBT is the native coordination asset for AI resources, education services, creator networks, identity systems, governance participation, and ecosystem operations. It is not equity, debt, dividends, or fixed income.'],
-  ['Protocol resources include AI translation, voice translation, subtitles, multilingual sync, education settlement, creator tools, reputation activation, governance, open APIs, enterprise services, and advanced collaboration modules.'],
-  ['BBT does not use buy or sell tax. Long-term sinks come from real protocol usage such as premium translation, real-time voice, creator sync, AI subtitles, education services, identity upgrades, DAO proposals, enterprise APIs, and developer interfaces.'],
+  ['BBT may serve as a utility component for future protocol resource coordination and ecosystem governance, connecting AI services, education collaboration, creator tools, open APIs, and community governance scenarios.', 'Specific mechanisms will be disclosed separately based on product progress, user demand, and compliance requirements across jurisdictions. This public whitepaper does not provide issuance allocation, liquidity arrangements, yield expectations, or market performance commitments.'],
   ['Governance may cover protocol parameters, ecosystem funds, creator incentives, education rules, reputation rules, identity upgrades, API access, community standards, and partnership proposals through progressive decentralization.'],
   ['Language data is sensitive. BBT prioritizes data minimization, permission control, DID, user-controlled authorization, encrypted communication, AI data isolation, distributed storage, and enterprise access control.'],
   ['More users create more cross-language interaction, more language data, stronger context understanding, better product experiences, and stronger attraction for creators, teachers, partners, guides, developers, and enterprises.'],
   ['The business model is based on real collaboration demand: AI translation, education marketplace, creator services, enterprise APIs, identity and reputation services, developer tools, and advanced AI features.'],
-  ['Phase 1 in 2026 builds foundation products, token deployment, and early community. Phase 2 expands social, education, and creator networks. Phase 3 opens APIs, SDKs, DAO modules, and enterprise services. Phase 4 moves toward global language coordination infrastructure.'],
+  ['Phase 1 in 2026 builds foundation products and early community. Phase 2 expands social, education, and creator networks. Phase 3 opens APIs, SDKs, DAO modules, and enterprise services. Phase 4 moves toward global language coordination infrastructure.'],
   ['BBT follows a utility-first design. It does not promise price, yield, return, or market performance, and it does not represent equity, debt, dividends, or ownership. Compliance will evolve across jurisdictions.'],
   ['Over the next decade, the internet will move from information to collaboration. BBT aims to build a global language collaboration network where language becomes an open protocol layer for the next internet.'],
 ];
@@ -196,7 +192,7 @@ const jaBodies = [
   ['言語は人類にとって最も古く、最も持続的な協働プロトコルです。BBT は単なる翻訳ツールやソーシャルアプリではなく、AI ネイティブのグローバル言語協働プロトコルです。', 'リアルタイム言語理解、多言語ソーシャル、教育協働、Creator Economy、分散型 ID、言語レピュテーションを統合し、異なる言語・文化・国の人々が理解し、つながり、協働できる基盤を目指します。'],
   ['インターネットは情報をグローバル化しましたが、協働は今も言語によって分断されています。ソーシャル、コンテンツ、教育、越境ビジネス、文化理解には長期的な摩擦があります。', '真のグローバル協働には、字面の翻訳だけでなく、トーン、感情、文化背景、関係性、Creator の表現を理解する言語インフラが必要です。'],
   ['LanguageFi は単なる「言語 + 金融」ではありません。AI 時代のグローバル言語協働ネットワークです。AI はリアルタイム理解を可能にし、Web3 はオープン ID、評判、リソース調整、ガバナンス参加を可能にします。', 'その目的はグローバル協働コストを下げ、Global Language Collaboration Network を解放することです。'],
-  ['BBT LanguageFi Protocol は、Translation Layer、Social Layer、Education Layer、Creator Economy Engine、Language Graph、Language Reputation System、Global Coordination Identity、BBT Coordination Economy、Governance Framework、オープンプロトコルインフラで構成されます。'],
+  ['BBT LanguageFi Protocol は、Translation Layer、Social Layer、Education Layer、Creator Economy Engine、Language Graph、Language Reputation System、Global Coordination Identity、Governance Framework、オープンプロトコルインフラで構成されます。'],
   ['アーキテクチャは User Layer、AI Coordination Layer、Language Graph Layer、Protocol Layer、Infrastructure Layer に分かれます。ユーザーは翻訳、ソーシャル、教育、Creator、企業 API、開発者ツールからネットワークへ参加します。'],
   ['AI はプロトコルの知能エンジンです。テキスト翻訳、音声翻訳、字幕、多言語同期、文脈理解、感情認識、教育フィードバック、Creator 配信、企業協働を支えます。'],
   ['Translation Layer はネットワークの入口であり、テキスト、音声、会話、グループ、ライブ配信、字幕、コミュニティ、企業 API 翻訳をカバーします。各インタラクションは Language Graph の一部になり得ます。'],
@@ -206,42 +202,15 @@ const jaBodies = [
   ['Language Graph はプロトコルの長期的なネットワーク資産であり、言語能力、翻訳貢献、教育貢献、ソーシャル信頼、Creator 影響力、文化貢献、ローカル知識、協働行動から形成されます。'],
   ['Language Reputation は、能力、貢献、信頼、文化理解、Creator 影響力の長期的な表現です。マッチング、ランキング、権限、ガバナンス参照、企業サービス選定に活用できます。'],
   ['Global Coordination Identity は BBT ネットワークにおける参加、貢献、権限、協働 ID を表します。金融上の権利、保証されたリターン、有価証券上の権益を意味しません。'],
-  ['BBT は AI リソース、教育サービス、Creator ネットワーク、ID システム、ガバナンス参加、エコシステム運営を調整するネイティブ資産です。株式、債務、配当、固定収益ではありません。'],
-  ['プロトコルリソースには、AI 翻訳、音声翻訳、字幕、多言語同期、教育決済、Creator ツール、Reputation アクティベーション、ガバナンス、オープン API、企業サービス、高度な協働機能が含まれます。'],
-  ['BBT は売買稅を採用しません。長期的な消費は、高度な翻訳、リアルタイム音声、Creator 同期、AI 字幕、教育サービス、ID アップグレード、DAO 提案、企業 API、開発者インターフェースなど実利用から生まれます。'],
+  ['BBT は将来的に、AI サービス、教育協働、Creator ツール、オープン API、コミュニティガバナンスなどを接続する、プロトコルリソース調整とエコシステムガバナンスのためのユーティリティコンポーネントとして機能する可能性があります。', '具体的な仕組みは、プロダクトの進展、ユーザー需要、各法域のコンプライアンス要件に応じて別途公開されます。本公開ホワイトペーパーでは、発行配分、流動性設計、利回り期待、市場パフォーマンスの約束を提示しません。'],
   ['ガバナンスは、プロトコルパラメータ、エコシステム基金、Creator インセンティブ、教育市場ルール、Reputation ルール、ID アップグレード、API 開放、コミュニティ基準、提携提案を段階的に扱います。'],
   ['言語データは機微性が高いデータです。BBT はデータ最小化、権限管理、DID、ユーザー制御の認可、暗号化通訊、AI データ分離、分散ストレージ、企業向けアクセス制御を重視します。'],
   ['より多くのユーザーが参加すると、より多くのクロスランゲージ交流と言語データが生まれ、AI の文脈理解が強化され、翻訳・教育・ソーシャル体験が向上し、Creator、教師、パートナー、ガイド、開発者、企業を引き寄せます。'],
   ['ビジネスモデルは実際の言語協働ニーズに基づきます。AI 翻訳、教育マーケットプレイス、Creator サービス、企業 API、ID と Reputation、開発者ツール、高度な AI 機能が含まれます。'],
-  ['2026 年は基礎プロダクト、トークン展開、初期コミュニティを構築します。2027 年はソーシャル、教育、Creator ネットワークを拡張します。2028 年は API、SDK、DAO、企業サービスを開放し、2029 年以降はグローバル言語協働インフラへ進みます。'],
+  ['2026 年は基礎プロダクトと初期コミュニティを構築します。2027 年はソーシャル、教育、Creator ネットワークを拡張します。2028 年は API、SDK、DAO、企業サービスを開放し、2029 年以降はグローバル言語協働インフラへ進みます。'],
   ['BBT は Utility-first 設計を採用します。価格、利回り、リターン、市場パフォーマンスを約束せず、株式、債務、配当、所有権を表しません。コンプライアンスは各法域に応じて継続的に整備されます。'],
   ['今後 10 年で、インターネットは情報のネットワークから協働のネットワークへ移行します。BBT は言語を次世代インターネットのオープンプロトコルレイヤーにすることを目指します。'],
 ];
-
-const tableData = {
-  zh: {
-    headers: ['分類', '數量', '占比'],
-    rows: [
-      ['LanguageFi Ecosystem Treasury', '700,000,000', '70%'],
-      ['Social & Creator Growth Pool', '100,000,000', '10%'],
-      ['Foundation Reserve', '100,000,000', '10%'],
-      ['Technology & AI Infrastructure Reserve', '50,000,000', '5%'],
-      ['Early Contributors', '10,000,000', '1%'],
-      ['Initial Liquidity', '40,000,000', '4%'],
-    ],
-  },
-  en: {
-    headers: ['Category', 'Amount', 'Share'],
-    rows: [
-      ['LanguageFi Ecosystem Treasury', '700,000,000', '70%'],
-      ['Social & Creator Growth Pool', '100,000,000', '10%'],
-      ['Foundation Reserve', '100,000,000', '10%'],
-      ['Technology & AI Infrastructure Reserve', '50,000,000', '5%'],
-      ['Early Contributors', '10,000,000', '1%'],
-      ['Initial Liquidity', '40,000,000', '4%'],
-    ],
-  },
-};
 
 const fallbackBodies = {
   ja: jaBodies,
@@ -261,7 +230,7 @@ export function getWhitepaper(lang) {
     number: String(index + 1).padStart(2, '0'),
     title,
     body: bodies[index],
-    table: index === 13 ? tableData[lang] ?? tableData.en : null,
+    table: null,
   }));
   return {
     ...copy,

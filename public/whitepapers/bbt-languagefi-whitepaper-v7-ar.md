@@ -1,6 +1,6 @@
 # BBT LanguageFi Protocol
 
-**بروتوكول تعاون عالمي أصلي للذكاء الاصطناعي**
+بروتوكول تعاون عالمي أصلي للذكاء الاصطناعي
 
 لغة بلا حدود. تعاون بلا حدود.
 
@@ -34,7 +34,7 @@ The goal is to reduce global collaboration cost and unlock a Global Language Col
 
 ## 04. نظرة عامة على البروتوكول
 
-The protocol consists of Translation Layer, Social Layer, Education Layer, Creator Economy Engine, Language Graph, Language Reputation System, Global Coordination Identity, BBT Coordination Economy, Governance Framework, and open protocol infrastructure.
+The protocol consists of Translation Layer, Social Layer, Education Layer, Creator Economy Engine, Language Graph, Language Reputation System, Global Coordination Identity, Governance Framework, and open protocol infrastructure.
 
 ## 05. معمارية البروتوكول
 
@@ -72,51 +72,36 @@ Language Reputation represents long-term ability, contribution, social trust, cu
 
 Global Coordination Identity expresses participation, contribution, permission, and collaboration identity in the BBT network. It does not represent financial rights, guaranteed returns, or securities interests.
 
-## 14. اقتصاد تنسيق BBT
+## 14. تنسيق موارد البروتوكول
 
-BBT is the native coordination asset for AI resources, education services, creator networks, identity systems, governance participation, and ecosystem operations. It is not equity, debt, dividends, or fixed income.
+BBT may serve as a utility component for future protocol resource coordination and ecosystem governance, connecting AI services, education collaboration, creator tools, open APIs, and community governance scenarios.
 
-| Category | Amount | Share |
-| --- | --- | --- |
-| LanguageFi Ecosystem Treasury | 700,000,000 | 70% |
-| Social & Creator Growth Pool | 100,000,000 | 10% |
-| Foundation Reserve | 100,000,000 | 10% |
-| Technology & AI Infrastructure Reserve | 50,000,000 | 5% |
-| Early Contributors | 10,000,000 | 1% |
-| Initial Liquidity | 40,000,000 | 4% |
+Specific mechanisms will be disclosed separately based on product progress, user demand, and compliance requirements across jurisdictions. This public whitepaper does not provide issuance allocation, liquidity arrangements, yield expectations, or market performance commitments.
 
-## 15. نموذج موارد البروتوكول
-
-Protocol resources include AI translation, voice translation, subtitles, multilingual sync, education settlement, creator tools, reputation activation, governance, open APIs, enterprise services, and advanced collaboration modules.
-
-## 16. آلية استهلاك البروتوكول
-
-BBT does not use buy or sell tax. Long-term sinks come from real protocol usage such as premium translation, real-time voice, creator sync, AI subtitles, education services, identity upgrades, DAO proposals, enterprise APIs, and developer interfaces.
-
-## 17. إطار الحوكمة
+## 15. إطار الحوكمة
 
 Governance may cover protocol parameters, ecosystem funds, creator incentives, education rules, reputation rules, identity upgrades, API access, community standards, and partnership proposals through progressive decentralization.
 
-## 18. الخصوصية والأمان
+## 16. الخصوصية والأمان
 
 Language data is sensitive. BBT prioritizes data minimization, permission control, DID, user-controlled authorization, encrypted communication, AI data isolation, distributed storage, and enterprise access control.
 
-## 19. دولاب نمو النظام البيئي
+## 17. دولاب نمو النظام البيئي
 
 More users create more cross-language interaction, more language data, stronger context understanding, better product experiences, and stronger attraction for creators, teachers, partners, guides, developers, and enterprises.
 
-## 20. نموذج الأعمال
+## 18. نموذج الأعمال
 
 The business model is based on real collaboration demand: AI translation, education marketplace, creator services, enterprise APIs, identity and reputation services, developer tools, and advanced AI features.
 
-## 21. خارطة الطريق
+## 19. خارطة الطريق
 
-Phase 1 in 2026 builds foundation products, token deployment, and early community. Phase 2 expands social, education, and creator networks. Phase 3 opens APIs, SDKs, DAO modules, and enterprise services. Phase 4 moves toward global language coordination infrastructure.
+Phase 1 in 2026 builds foundation products and early community. Phase 2 expands social, education, and creator networks. Phase 3 opens APIs, SDKs, DAO modules, and enterprise services. Phase 4 moves toward global language coordination infrastructure.
 
-## 22. إطار الامتثال
+## 20. إطار الامتثال
 
 BBT follows a utility-first design. It does not promise price, yield, return, or market performance, and it does not represent equity, debt, dividends, or ownership. Compliance will evolve across jurisdictions.
 
-## 23. الرؤية طويلة الأجل
+## 21. الرؤية طويلة الأجل
 
 Over the next decade, the internet will move from information to collaboration. BBT aims to build a global language collaboration network where language becomes an open protocol layer for the next internet.
